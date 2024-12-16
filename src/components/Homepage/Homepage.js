@@ -3,7 +3,7 @@ import './Homepage.css';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='homepage min-h-screen flex items-center justify-center'>
       
     </div>
   )

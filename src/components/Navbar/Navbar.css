@@ -1,3 +1,4 @@
+
 .nav-container {
   position: fixed;
   width: 100%;
@@ -51,7 +52,7 @@
   transition: all 0.3s ease;
 }
 
-/* Toggle Icon */
+
 .toggle-icon {
   position: absolute;
   top: -2rem;
@@ -61,15 +62,15 @@
   color: #f44336;
   border: none;
   cursor: pointer;
-  transition: transform 0.4s ease-in-out; /* Smooth rotation */
+  transition: transform 0.4s ease-in-out; 
 }
 
 .toggle-icon.open svg {
-  transform: rotate(90deg); /* Rotate 45 degrees when open */
+  transform: rotate(90deg); 
 }
 
 .toggle-icon svg {
-  transform: rotate(0deg); /* Default state */
+  transform: rotate(0deg); 
   transition: transform 0.4s ease-in-out;
 }
 
@@ -160,11 +161,9 @@
   position: relative;
   bottom: 0;
   width: 164px;
-  transition: left 1s linear;
+  transition: left 0.99s linear;
   z-index: 10;
 }
-
-
 
 .transformed-logo {
   position: relative;
@@ -186,61 +185,54 @@
     position: absolute;
     top: 0%;
     right: 0;
-    width: 200vw; /* Long enough for smooth scrolling */
-    height: 10vh; /* Height of the road */
-    background-color: gray; /* Solid gray background for the road */
+    width: 200vw; 
+    height: 10vh;
+    background-color: gray; 
     overflow: hidden;
     z-index: -1;
-    animation: moveRoadRightToLeft 3.8s linear infinite; /* Animate road movement from right to left */
+    animation: moveRoadRightToLeft 3.8s linear infinite; 
   }
   
   .road::before {
     content: '';
     position: absolute;
-    top: 50%; /* Center the dashed line vertically */
+    top: 50%;
     left: 0;
-    width: 200vw; /* Match road width */
-    height: 0.3rem; /* Height of the white dashed line */
+    width: 200vw;
+    height: 0.3rem; 
     background: repeating-linear-gradient(
       90deg,
       white 0,
       white 1.2rem,
       transparent 1rem,
       transparent 2.3rem
-    ); /* White dashed lines */
+    ); 
     transform: translateY(-50%);
-    animation: moveDashedLinesRightToLeft 4.8s linear infinite; /* Dashed lines move from right to left */
+    animation: moveDashedLinesRightToLeft 4.8s linear infinite; 
   }
   
   @keyframes moveRoadRightToLeft {
     from {
-      right: -200vw; /* Start road off-screen on the right */
+      right: -200vw; 
     }
     to {
-      right: 0; /* Move road to the left until it's fully visible */
+      right: 0; 
     }
   }
   
   @keyframes moveDashedLinesRightToLeft {
     from {
-      background-position: 0; /* Start dashed lines from right */
+      background-position: 0; 
     }
     to {
-      background-position: -2rem; /* Move dashed lines to the left */
+      background-position: -2rem; 
     }
   }
-  
-  /* Hide road when transformed */
+
   .transformed .road {
     display: none;
   }
   
-  
-  
-  
-  
-  
-
   .car-logo-container {
     position: relative;
     top: 0;
@@ -369,4 +361,3 @@
 .wheel-icon {
   top: -0.5rem;
 }
-
