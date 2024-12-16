@@ -56,7 +56,6 @@ const Footer = () => {
           </div>
 
           {/* Connect With Us */}
-        {/* Connect With Us */}
 <div>
   <h3 className="text-xl font-bold mb-4 relative inline-block">
     Connect With Us
@@ -67,7 +66,7 @@ const Footer = () => {
   </p>
   <div className="flex justify-start space-x-6">
     <a
-      href="https://youtube.com/"
+      href="https://www.youtube.com/@saenitdgp"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-red-500 transition-transform transform hover:scale-110 duration-300"
@@ -76,7 +75,7 @@ const Footer = () => {
       <Youtube className="w-7 h-7" />
     </a>
     <a
-      href="https://linkedin.com/"
+      href="https://www.linkedin.com/company/sae-nitdgp/"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-red-500 transition-transform transform hover:scale-110 duration-300"
@@ -85,7 +84,7 @@ const Footer = () => {
       <LinkedinIcon className="w-7 h-7" />
     </a>
     <a
-      href="https://instagram.com/"
+      href="https://www.instagram.com/sae.nitd"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-red-500 transition-transform transform hover:scale-110 duration-300"
@@ -94,7 +93,7 @@ const Footer = () => {
       <InstagramIcon className="w-7 h-7" />
     </a>
     <a
-      href="https://facebook.com/"
+      href="https://www.facebook.com/SAENITD"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-red-500 transition-transform transform hover:scale-110 duration-300"
