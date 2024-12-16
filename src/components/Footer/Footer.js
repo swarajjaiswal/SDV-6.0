@@ -1,7 +1,7 @@
 import React from 'react'
-import './Team.css'
+import './Footer.css';
 
-const Team = () => {
+const Footer = () => {
   return (
     <div>
       
@@ -9,4 +9,4 @@ const Team = () => {
   )
 }
 
-export default Team
+export default Footer

@@ -1,7 +1,6 @@
 import React from 'react'
-import './Homepage.css'
 
-const Homepage = () => {
+const Previousevent = () => {
   return (
     <div>
       
@@ -9,4 +8,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default Previousevent

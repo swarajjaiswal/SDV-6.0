@@ -1,7 +1,6 @@
 import React from 'react'
-import './Footer.css'
 
-const Footer = () => {
+const Sdvcomponent = () => {
   return (
     <div>
       
@@ -9,4 +8,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Sdvcomponent
