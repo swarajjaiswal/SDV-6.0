@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sdvcomponent = () => {
   return (
-    <div>
+    <div className='sdvcomponent min-h-screen flex justify-center items-center'> 
       
     </div>
   )

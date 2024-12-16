@@ -137,8 +137,8 @@ const Navbar = () => {
           <NavLink to="/team" activeClassName="active" className="nav-item">
             Team
           </NavLink>
-          <NavLink to="/previousevent" activeClassName="active" className="nav-item">
-            Previous Event
+          <NavLink to="/gallery" activeClassName="active" className="nav-item">
+            Gallery
           </NavLink>
         </div>
       </div>

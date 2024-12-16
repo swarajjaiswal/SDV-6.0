@@ -49,8 +49,8 @@ const Footer = () => {
               <NavLink to="/team" className="block hover:text-red-500 transition-colors duration-300">
                 Team
               </NavLink>
-              <NavLink to="/previousevent" className="block hover:text-red-500 transition-colors duration-300">
-                Previous Event
+              <NavLink to="/gallery" className="block hover:text-red-500 transition-colors duration-300">
+                Gallery
               </NavLink>
             </nav>
           </div>

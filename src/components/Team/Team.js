@@ -2,7 +2,7 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div>
+    <div className='team min-h-screen flex justify-center items-center'>
       
     </div>
   )
