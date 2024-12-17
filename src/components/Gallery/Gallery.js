@@ -6,7 +6,7 @@ import SAE1 from "../ASSETS/SAEIMG1.JPG";
 // import SAE2 from "../ASSETS/SAEIMG2.JPG";
 import SAE3 from "../ASSETS/SAEIMG3.JPG";
 import SAE4 from "../ASSETS/SAEIMG4.JPG";
-import SAE5 from "../ASSETS/SAEIMG5.JPG";
+// import SAE5 from "../ASSETS/SAEIMG5.JPG";
 import SAE6 from "../ASSETS/SAEIMG6.JPG";
 import SAE7 from "../ASSETS/SAEIMG7.JPG";
 import SAE8 from "../ASSETS/SAEIMG8.JPG";
@@ -34,7 +34,7 @@ import SAE29 from "../ASSETS/SAEIMG29.JPG";
 
 const Gallery = () => {
   const images = [
-    SAE1, SAE3, SAE4, SAE5, SAE6, SAE7, SAE8, SAE9, SAE10,
+    SAE1, SAE3, SAE4, SAE6, SAE7, SAE8, SAE9, SAE10,
     SAE11, SAE12, SAE13, SAE14, SAE15, SAE16, SAE17, SAE18, SAE19, SAE20,
     SAE21, SAE22, SAE23, SAE24, SAE25, SAE26, SAE27, SAE28, SAE29
   ];
@@ -50,11 +50,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container flex flex-col items-center justify-center min-h-screen">
-        <br/><br/>
-      <h1 className="gallery-title">Explore the SDV Gallery</h1>
+    <div className="gallery-container">
+      <h1 className="gallery-title mt-16">Explore the SDV Gallery</h1>
 
-      {/* Image Expansion */}
       {expandedImage && (
         <div className="expanded-view">
           <img src={expandedImage} alt="Expanded View" />
@@ -64,15 +62,15 @@ const Gallery = () => {
 
       <div className="gallery-grid">
         {images.map((img, index) => (
-          <div key={index} className="gallery-item" onClick={() => handleExpandImage(img)}>
-            <div className="image-overlay">
-              <img src={img} alt={`Image ${index + 1}`} />
-            </div>
+          <div
+            key={index}
+            className="gallery-item"
+            onClick={() => handleExpandImage(img)}
+          >
+            <img src={img} alt={`Image ${index + 1}`} />
           </div>
         ))}
       </div>
-
-     
     </div>
   );
 };

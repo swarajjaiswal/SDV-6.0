@@ -6,12 +6,14 @@ import Sdvcomponent from "./components/Sdv Components/Sdvcomponent";
 import Team from "./components/Team/Team";
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
+import Sparkles from "./components/Sparkles/Sparkles";
 // import Sparkles from "./components/Sparkle"; 
 
 function App() {
   return (
     <div className="App">
       {/* <Sparkles /> Sparkle Effect */}
+      <Sparkles />
       <Router>
         <Navbar />
         <Routes>
