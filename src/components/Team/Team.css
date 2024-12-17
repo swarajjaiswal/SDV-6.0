@@ -1,0 +1,114 @@
+.team-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c1c 0%, #242424 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.team-heading {
+    font-size: 2.5rem;
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.team-member {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: calc(33% - 40px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease-in-out;
+}
+
+.name:hover {
+    color: #ff0000;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    color: #ff0000;
+}
+
+.icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.icon.twitter:hover {
+    background-color: #1DA1F2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .team-member {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+    }
+    
+    .team-page {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .team-member {
+        width: calc(50% - 40px);
+    }
+}
