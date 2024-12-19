@@ -178,7 +178,7 @@ body {
   
   @media (max-width: 768px) {
     .component {
-      padding-top: 5%;
+      padding-top: 10%;
     }
   
     .gallery-heading {
