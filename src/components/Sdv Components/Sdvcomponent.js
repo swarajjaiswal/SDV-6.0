@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SdvComponents.css';
+import './SdvComponent.css';
 
 const images = [
   'url(./Arduino.jpg)',
