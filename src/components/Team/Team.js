@@ -117,7 +117,7 @@ const Team = () => {
         <>
         <div className="team-page">  
             {teamMembers.map((member, index) => (
-                <div key={index} className="team-member">
+                <div key={index} className="team-member mt-12">
                     <img src={member.imgSrc} alt={member.name} />
                     <h3 className="name">{member.name}</h3>
                 </div>

@@ -7,11 +7,11 @@ const ScrollToTop = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Enables smooth scrolling
+      behavior: "smooth",
     });
-  }, [pathname]); // Trigger scroll to top on route change
+  }, [pathname]);
 
-  return null; // This component does not render any UI
+  return null;
 };
 
 export default ScrollToTop;
