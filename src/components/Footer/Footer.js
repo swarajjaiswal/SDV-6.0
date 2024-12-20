@@ -49,7 +49,7 @@ const Footer = () => {
               <NavLink to="/" className="hover:text-red-500">
                 Home
               </NavLink>
-              <NavLink to="/sdvcomponent" className="hover:text-red-500">
+              <NavLink to="/components" className="hover:text-red-500">
                 Components
               </NavLink>
               <NavLink to="/team" className="hover:text-red-500">

@@ -8,14 +8,15 @@ import Team from "./components/Team/Team";
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Sparkles from "./components/Sparkles/Sparkles";
-
-
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Sparkles />
       <Router>
+        {/* Ensure ScrollToTop is inside the Router */}
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
