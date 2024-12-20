@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/sdvcomponent" element={<Component />} />
+          <Route path="/components" element={<Component />} />
           <Route path="/team" element={<Team />} />
           <Route path="/Gallery" element={<Gallery />} />
         </Routes>

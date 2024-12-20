@@ -45,7 +45,7 @@ const Component = () => {
 
   return (
     <div className="component">
-      <h1 className="gallery-heading">
+      <h1 className="gallery-heading text-center">
         <span>KNOW YOUR COMPONENTS</span>
       </h1>
       <div className="card-container">

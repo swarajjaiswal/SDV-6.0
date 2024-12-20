@@ -1,11 +1,3 @@
-body {
-    font: 400 1em/1.5 "Neuton";
-    background: #090d00;
-    color: rgba(255,255,255,.25);
-    text-align: center;
-    margin: 0;
-  }
-  
   .component {
     padding-top: 10%;
   }
@@ -18,7 +10,9 @@ body {
     padding: 1.5em 0em;
     width: 90%;
     margin: 0 auto;
-    font: 400 0.9em/1.5 "Neuton";
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color: rgba(255,255,255,.25);
   }
   
   .gallery-heading span {

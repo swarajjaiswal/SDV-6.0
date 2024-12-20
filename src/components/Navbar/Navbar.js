@@ -127,8 +127,8 @@ export const Navbar = () => {
           <NavLink to="/" className="nav-item" activeClassName="active">
             Home
           </NavLink>
-          <NavLink to="/sdvcomponent" className="nav-item" activeClassName="active">
-            SDV Components
+          <NavLink to="/components" className="nav-item" activeClassName="active">
+            Components
           </NavLink>
           <NavLink to="/team" className="nav-item" activeClassName="active">
             Team
