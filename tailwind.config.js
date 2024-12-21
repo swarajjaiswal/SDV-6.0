@@ -8,7 +8,7 @@ module.exports = {
       },
 
       animation: {
-        "slow-marquee": "marquee 20s linear infinite", // Slow scrolling animation
+        "slow-marquee": "marquee 15s linear infinite", // Slow scrolling animation
         "fade-in": "fadeIn 2s ease-in-out",
       },
       keyframes: {
