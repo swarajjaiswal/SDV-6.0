@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         stardos: ["'Stardos Stencil'", "sans-serif"],
       },
+
       animation: {
         "slow-marquee": "marquee 20s linear infinite", // Slow scrolling animation
         "fade-in": "fadeIn 2s ease-in-out",

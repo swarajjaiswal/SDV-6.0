@@ -1,3 +1,45 @@
+/* Add fancy glow effect */
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(98, 0, 238, 0.5), rgba(0, 174, 255, 0.5));
+  transform: skewX(-45deg);
+  transition: 0.5s ease;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.glow-btn:hover::before {
+  transform: skewX(-45deg) translateX(100%);
+  filter: blur(12px);
+}
+
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(98, 0, 238, 0.5), 0px 7px 20px rgba(0, 174, 255, 0.7);
+}
+
+/* Add hover animations for text */
+.glow-btn:hover {
+  background: linear-gradient(to right, #7f5af0, #63e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 8px #63e, 0px 0px 16px #7f5af0;
+}
+
+
 .nav-container {
   position: sticky;
   width: 100%;
@@ -144,7 +186,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: rgb(108, 60, 240);
   transition: 0.5s;
 }
 
