@@ -59,7 +59,7 @@ const AnimatedText = ({ onAnimationComplete }) => {
 
       <text
         id="animatedText"
-        x="50"
+        x="50%"
         y="150"
         style={{
           fill: "url(#imagePattern)",
@@ -71,6 +71,7 @@ const AnimatedText = ({ onAnimationComplete }) => {
           strokeDasharray: "500",
           strokeDashoffset: "500",
           filter: "url(#glowFilter)",
+          textAnchor: "middle",
         }}
       >
         SDV-6.0
