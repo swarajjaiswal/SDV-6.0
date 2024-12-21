@@ -1,38 +1,49 @@
+/* Gallery Container */
 .gallery-container {
-  background: linear-gradient(to bottom, rgb(21, 23, 26), rgb(15, 15, 15));
+  background: linear-gradient(to bottom, #000000, #32004b); /* Black to dark purple gradient */
   color: #f5f5f5;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
 }
 
+/* Gallery Title */
 .gallery-title {
-  font-size: 3rem;
-  color: rgb(202, 52, 53);
-  font-weight: bold;
-  margin-bottom: 2.5rem;
+  font-size: 3.5rem; /* Increased size */
+  font-weight: 800;
+  margin-bottom: 2rem;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background: linear-gradient(to right, #32004b, #ffffff); /* Dark purple to white gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease;
 }
 
 .gallery-title::after {
   content: '';
   position: absolute;
-  bottom: -8px;
+  bottom: -6px;
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: rgb(202, 52, 53);
+  background-color: #32004b;
   transition: transform 0.5s ease;
+}
+
+.gallery-title:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  text-shadow: 2px 2px 10px rgba(50, 0, 75, 0.8), -2px -2px 10px rgba(50, 0, 75, 0.8); /* Adding shadow on hover */
 }
 
 .gallery-title:hover::after {
   transform: scaleX(1.2);
 }
 
+/* Gallery Grid */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,23 +52,51 @@
   justify-items: center;
 }
 
+/* Gallery Items */
 .gallery-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease, transform 0.3s ease;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   border-radius: 15px;
-  border: 4px solid white; /* Static white border */
+  border: 4px solid #ffffff;
+  display: inline-block;
+  background-color: #2c003e; /* Dark background for the cards */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Image Styling */
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the square area */
+  object-fit: cover;
   display: block;
   border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+  transform: rotateY(10deg) scale(1.08); /* 3D flip and scale effect */
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+  border: 6px solid rgba(138, 43, 226, 0.8); /* Glowing purple border */
+  background-color: rgba(50, 0, 75, 0.6); /* Subtle background tint */
+}
+
+.gallery-item:hover img {
+  filter: brightness(1.25); /* Brighten the image */
+  transform: scale(1.1) rotate(5deg); /* Zoom and rotate the image for effect */
+}
+
+/* Neon Glow */
+.gallery-item:hover::before,
+.gallery-item:hover::after {
+  width: 100%;
+  height: 6px;
+  background-color: #8A2BE2; /* Glowing purple */
 }
 
 .gallery-item::before {
@@ -67,7 +106,7 @@
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: rgb(202, 52, 53);
+  background-color: #32004b;
   transition: width 0.4s ease;
 }
 
@@ -78,24 +117,11 @@
   right: 0;
   width: 0%;
   height: 3px;
-  background-color: rgb(202, 52, 53);
+  background-color: #32004b;
   transition: width 0.4s ease;
 }
 
-.gallery-item:hover::before {
-  width: 100%;
-}
-
-.gallery-item:hover::after {
-  width: 100%;
-}
-
-.gallery-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  border: 4px solid transparent; /* Hide static white border on hover */
-}
-
+/* Expanded View */
 .expanded-view {
   position: fixed;
   top: 0;
@@ -116,6 +142,24 @@
   animation: zoomIn 0.4s ease;
 }
 
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg) scale(1.2);
+  color: #cccccc;
+}
+
+/* Keyframes */
 @keyframes zoomIn {
   from {
     transform: scale(0.8);
@@ -127,24 +171,13 @@
   }
 }
 
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 2.5rem;
-  color: rgb(202, 52, 53);
-  cursor: pointer;
-  animation: fadeIn 0.5s ease;
-}
-
-.close-btn:hover {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-title {
+    font-size: 2.5rem; /* Slightly smaller for tablets */
   }
 }
 
@@ -153,7 +186,22 @@
     grid-template-columns: 1fr;
   }
 
+  .gallery-title {
+    font-size: 2rem; /* Smaller title for mobile */
+    margin-bottom: 1.5rem;
+  }
+
   .gallery-item img {
     height: 250px; /* Adjusted for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-title {
+    font-size: 1.8rem; /* Smallest title for very small screens */
+  }
+
+  .close-btn {
+    font-size: 2.5rem; /* Adjusted size for small screens */
   }
 }

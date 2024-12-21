@@ -46,7 +46,7 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <h1 className="gallery-title mt-16">Explore the SDV Gallery</h1>
-
+      <br/><br/>
       {expandedImage && (
         <div className="expanded-view">
           <div className="overlay" onClick={handleCloseExpand}></div>
