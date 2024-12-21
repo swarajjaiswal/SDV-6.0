@@ -1,4 +1,14 @@
+body {
+  font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255, 255, 255, .25);
+  text-align: center;
+  margin: 0;
+}
 
+.component {
+  padding-top: 8%;
+}
 
 .gallery-heading {
   text-transform: uppercase;
@@ -165,7 +175,7 @@
   }
 
   .card .info h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 
