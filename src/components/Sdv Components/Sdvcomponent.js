@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SdvComponent.css';
 
 const images = [
-  'url(./Arduino.jpg)',
-  'url(./ServoMotor.jpg)',
-  'url(./L298.jpg)',
-  'url(./BOMotor.jpg)',
-  'url(./IRproximity.jpg)',
-  'url(./Cells.jpg)',
-  'url(./UltrasonicSensor.jpg)',
-  'url(./Switches.jpg)'
+  'Arduino.jpg',
+  'ServoMotor.jpg',
+  'L298.jpg',
+  'BOMotor.jpg',
+  'IRproximity.jpg',
+  'Cells.jpg',
+  'UltrasonicSensor.jpg',
+  'Switches.jpg',
+  'Jumper Wires.jpg',      
+  'Wheels.jpg'      
 ];
 
 const cardHeadings = [
@@ -20,7 +22,9 @@ const cardHeadings = [
   'IR Proximity Sensor',
   'Cells',
   'Ultrasonic Sensor',
-  'Switchs'
+  'Switches',
+  'Jumper Wires',        
+  'Wheels'       
 ];
 
 const cardParagraphs = [
@@ -30,41 +34,30 @@ const cardParagraphs = [
   'BO Motor, stands for Battery Operated Motor, is a simple DC Geared Motor consists of gearbox and shaft, used in Robot, cars and other DIY projects where movement is needed.',
   'The IR sensor or infrared sensor is one kind of electronic component, used to detect specific characteristics in its surroundings through emitting or detecting IR radiation.',
   'Electric cells are devices that convert chemical energy into electrical energy through a process involving oxidation and reduction .',
-  'Ultrasonic sensor s are electronic devices that calculate the target’s distance by emission of ultrasonic sound waves and convert those waves into electrical signals.',
-  'A Switch is a device which is designed to interrupt the current flow in a circuit. In simple words, a Switch can make or break an electrical circuit.'
+  'Ultrasonic sensors are electronic devices that calculate the target’s distance by emission of ultrasonic sound waves and convert those waves into electrical signals.',
+  'A Switch is a device which is designed to interrupt the current flow in a circuit. In simple words, a Switch can make or break an electrical circuit.',
+  'Jumper wires are flexible electrical wires used to connect components on a breadboard or in a circuit, making prototyping and testing quick and easy.',      
+  'Wheels are mechanical components used for movement, attached to motors to provide mobility.'  
 ];
 
 const Component = () => {
-  const [flipped, setFlipped] = useState(Array(8).fill(false));
-
-  const handleClick = (index) => {
-    const newFlipped = [...flipped];
-    newFlipped[index] = !newFlipped[index];
-    setFlipped(newFlipped);
-  };
-
   return (
     <div className="component">
-      <h1 className="gallery-heading text-center">
+      <h1 className="gallery-heading">
         <span>KNOW YOUR COMPONENTS</span>
       </h1>
       <div className="card-container">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`card ${flipped[index] ? 'flipped' : ''}`}
-            onClick={() => handleClick(index)}
-            style={{ backgroundImage: image }}
+            className="card"
           >
-            <div className="card-content">
-              <div className="card-front">
-                <h2 className="card-heading">{cardHeadings[index]}</h2>
-                <p className="click-me">Click me!</p>
-              </div>
-              <div className="card-back">
-                <p>{cardParagraphs[index]}</p>
-              </div>
+            <img src={process.env.PUBLIC_URL + '/' + image} alt={cardHeadings[index]} />
+            <div className="info">
+              <h1>{cardHeadings[index]}</h1>
+              <p>{cardParagraphs[index]}</p>
             </div>
+            <div className="card-heading">{cardHeadings[index]}</div>
           </div>
         ))}
       </div>
