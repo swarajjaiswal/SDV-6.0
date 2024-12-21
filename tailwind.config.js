@@ -2,8 +2,25 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        stardos: ["'Stardos Stencil'", "sans-serif"],
+      },
+      animation: {
+        "slow-marquee": "marquee 20s linear infinite", // Slow scrolling animation
+        "fade-in": "fadeIn 2s ease-in-out",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(100%)" }, // Starts off-screen to the right
+          "100%": { transform: "translateX(-100%)" }, // Moves off-screen to the left
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+    },
   },
   plugins: [],
-}
-
+};

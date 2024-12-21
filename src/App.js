@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <Sparkles />
       <Router>
-        {/* Ensure ScrollToTop is inside the Router */}
         <ScrollToTop />
         <Navbar />
         <Routes>

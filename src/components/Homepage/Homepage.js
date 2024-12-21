@@ -1,64 +1,83 @@
-import React, { useEffect, useState } from 'react';
-import './Homepage.css';
+import React, { useState, useEffect } from "react";
+import "./Homepage.css";
+import AnimatedText from "./AnimatedText";
+import AtAGlance from "./AtAGlance";
+import { CalendarDays, MapPin } from "lucide-react";
+import WhySdv from "./WhySdv/WhySdv";
+import Banner from "./Banner";
+import Countdown from "./Countdown";
+import SdvWorkshop from "./SdvWorkshop/SdvWorkshop";
 
 const Homepage = () => {
-    const backgroundImage = 'url("./bg.jpg")'; 
-    const targetDate = new Date('January 18, 2025 00:00:00').getTime();
+  const [showAnimatedText, setShowAnimatedText] = useState(false);
+  const [showOtherContent, setShowOtherContent] = useState(false);
 
-    const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const handleAnimationComplete = () => {
+    setShowAnimatedText(false);
+    setShowOtherContent(true);
+  };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowAnimatedText(true);
+    }, 500);
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
 
-            setCountdown({ days, hours, minutes, seconds });
+  return (
+    
+    <div className="homepage min-h-screen flex flex-col">
+      <div className="w-full text-center">
+        {showAnimatedText && (
+          <AnimatedText onAnimationComplete={handleAnimationComplete} />
+        )}
+      </div>
 
-            if (distance < 0) {
-                clearInterval(interval);
-                setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-            }
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, [targetDate]);
-
-    return (
-        <div className="homepage" style={{ backgroundImage }}>
-            <div className="overlay">
-                <h1 className="heading" title="SDV 6.0">SDV 6.0</h1>
-                <p className="paragraph">Self-Driving Vehicle Workshop 6.0 is here!</p>
-                <p className='paragraph'>The Workshop goes live in</p>
-                <div id="countdown">
-                    <ul>
-                        <li id="days">
-                            <div className="number">{String(countdown.days).padStart(2, '0')}</div>
-                            <div className="label">Days</div>
-                        </li>
-                        <li id="hours">
-                            <div className="number">{String(countdown.hours).padStart(2, '0')}</div>
-                            <div className="label">Hours</div>
-                        </li>
-                        <li id="minutes">
-                            <div className="number">{String(countdown.minutes).padStart(2, '0')}</div>
-                            <div className="label">Mins</div>
-                        </li>
-                        <li id="seconds">
-                            <div className="number">{String(countdown.seconds).padStart(2, '0')}</div>
-                            <div className="label">Sec</div>
-                        </li>
-                    </ul>
-                </div>
-                <button className="register-button">Register Now</button>
-                
+      {showOtherContent && (
+        <div className="">
+          <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
+            {/* Text Section */}
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-8xl sdv-heading font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 drop-shadow-lg">
+                Self Driving Vehicles
+              </p>
+              <p className="text-xl text-white mt-4">
+                Discover the future of autonomous transportation with advanced
+                technology and innovation.
+              </p>
+              <div className="mt-6">
+                <p className="flex items-center text-white">
+                  <MapPin className="mr-2" /> National Institute of Technology
+                  Durgapur
+                </p>
+                <p className="flex items-center text-white mt-2">
+                  <CalendarDays className="mr-2" /> 18th-19th January, 2025
+                </p>
+              </div>
             </div>
+
+            {/* Image Section */}
+            <div className="flex-1">
+              <img
+                src="https://i.ibb.co/r0bz453/1-removebg.png"
+                alt="Car Image"
+                className="w-full rounded-lg "
+              />
+            </div>
+          </div>
+
+          <Countdown />
+          <SdvWorkshop />
+          <WhySdv />
+          {/* <AtAGlance /> */}
+          {/* <Banner /> */}
         </div>
-    );
+      )}
+    </div>
+  );
 };
 
 export default Homepage;

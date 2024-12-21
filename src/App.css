@@ -2,12 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: 'Roboto', Arial, sans-serif;
 }
 
 body {
   background-color: #121212;
   color: #ffffff;
-  line-height: 1.6;
+  /* line-height: 1.6;
+  height: 100vh; */
 } 

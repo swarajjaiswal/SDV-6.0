@@ -15,18 +15,26 @@ export const Navbar = () => {
           clearInterval(carRoadAnimation);
           setTimeout(() => {
             setIsTransformed(true);
-            document.querySelector('.car-logo-container').classList.add('transformed');
+            // Add transformed class to the navbar container
+            document.querySelector('.nav-container').classList.add('transformed');
           }, 500);
           return -5;
         }
         return prev - 2; // Move car left by 2vw
       });
 
-      setRoadPosition((prev) => (prev <= -200 ? -200 : prev - 2)); // Smooth stop for road
+      setRoadPosition((prev) => {
+        if (prev <= -200) return -200; // Stop moving the road when off-screen
+        return prev - 2; // Move road left by 2vw
+      });
     }, 26);
 
     return () => clearInterval(carRoadAnimation);
   }, []);
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const handleWheelClick = () => {
     const navItems = document.querySelector('.nav-items');
@@ -123,17 +131,17 @@ export const Navbar = () => {
             </button>
           </>
         )}
-        <div className={`nav-items ${isMenuOpen ? 'open' : ''}`}>
-          <NavLink to="/" className="nav-item" activeClassName="active">
+        <div className={`nav-items ${isMenuOpen ? 'open' : ''}`} onClick={closeMenu}>
+          <NavLink to="/" activeClassName="active" className="nav-item">
             Home
           </NavLink>
-          <NavLink to="/components" className="nav-item" activeClassName="active">
-            Components
+          <NavLink to="/components" activeClassName="active" className="nav-item" onClick={closeMenu}>
+            SDV Components
           </NavLink>
-          <NavLink to="/team" className="nav-item" activeClassName="active">
+          <NavLink to="/team" activeClassName="active" className="nav-item" onClick={closeMenu}>
             Team
           </NavLink>
-          <NavLink to="/gallery" className="nav-item" activeClassName="active">
+          <NavLink to="/gallery" activeClassName="active" className="nav-item" onClick={closeMenu}>
             Gallery
           </NavLink>
         </div>
