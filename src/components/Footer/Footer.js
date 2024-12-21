@@ -8,6 +8,7 @@ import {
   Facebook,
   Youtube,
 } from "lucide-react";
+import "./Footer.css";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
     <footer className="bg-black text-gray-300 relative">
       <button
         onClick={scrollToTop}
-        className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-red-500 p-3 rounded-full shadow-lg hover:bg-red-600 transition-all duration-300 focus:outline-none"
+        className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-custom-color p-3 rounded-full shadow-lg hover:bg-custom-color transition-all duration-300 focus:outline-none"
         aria-label="Scroll to top"
       >
         <ChevronUpIcon className="w-6 h-6 text-white" />
@@ -43,20 +44,24 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 relative inline-block">
               Quick Links
-              <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-red-600"></span>
+              <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-custom-color"></span>
             </h3>
             <nav className="space-y-4 flex flex-col">
-              <NavLink to="/" className="hover:text-red-500">
+              <NavLink to="/" className="hover:text-[rgb(148,99,247)]">
                 Home
               </NavLink>
-              <NavLink to="/components" className="hover:text-red-500">
+              <NavLink
+                to="/components"
+                className="hover:text-[rgb(148,99,247)]"
+              >
                 Components
               </NavLink>
-              <NavLink to="/team" className="hover:text-red-500">
-                Team
-              </NavLink>
-              <NavLink to="/gallery" className="hover:text-red-500">
+
+              <NavLink to="/gallery" className="hover:text-[rgb(148,99,247)]">
                 Gallery
+              </NavLink>
+              <NavLink to="/" className="hover:text-[rgb(148,99,247)]">
+                Register
               </NavLink>
             </nav>
           </div>
@@ -65,7 +70,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 relative inline-block">
               Connect With Us
-              <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-red-600"></span>
+              <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-custom-color"></span>
             </h3>
             <p className="text-gray-400 mb-4">
               Follow us on social media to stay updated with the latest news,
@@ -77,28 +82,29 @@ const Footer = () => {
                 target="_blank"
                 aria-label="YouTube"
               >
-                <Youtube className="w-7 h-7 hover:text-red-500" />
+                <Youtube className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
+              
               </a>
               <a
                 href="https://www.linkedin.com/company/sae-nitdgp/"
                 target="_blank"
                 aria-label="LinkedIn"
               >
-                <LinkedinIcon className="w-7 h-7 hover:text-red-500" />
+                <LinkedinIcon className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
               </a>
               <a
                 href="https://www.instagram.com/sae.nitd"
                 target="_blank"
                 aria-label="Instagram"
               >
-                <InstagramIcon className="w-7 h-7 hover:text-red-500" />
+                <InstagramIcon className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
               </a>
               <a
                 href="https://www.facebook.com/SAENITD"
                 target="_blank"
                 aria-label="Facebook"
               >
-                <Facebook className="w-7 h-7 hover:text-red-500" />
+                <Facebook className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
               </a>
             </div>
           </div>

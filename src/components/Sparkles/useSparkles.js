@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useMousePosition } from './useMousePosition';
 
 const PARTICLE_COUNT = 8;
-const COLORS = ['#8B0000', '#B22222', '#FF0000', '#800000', '#000000']; // Darker reds and black
+const COLORS = ['#800080', '#8A2BE2', '#9370DB', '#4B0082', '#6A0DAD']; // Shades of purple
 const SPARKLE_LIFETIME = 600; // milliseconds
 
 export const useSparkles = () => {
