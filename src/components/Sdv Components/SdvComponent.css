@@ -1,14 +1,4 @@
-body {
-  font: 400 1em/1.5 "Neuton";
-  background: #090d00;
-  color: rgba(255, 255, 255, .25);
-  text-align: center;
-  margin: 0;
-}
 
-.component {
-  padding-top: 8%;
-}
 
 .gallery-heading {
   text-transform: uppercase;
@@ -96,10 +86,12 @@ body {
 
 .card .info {
   position: relative;
-  z-index: 3;
+  z-index: 99;
   color: #fff;
   opacity: 0;
   transform: translateY(30px);
+
+  font: 400 1em/1.5 "Neuton";
   transition: opacity 0.5s, transform 0.5s;
 }
 
@@ -155,9 +147,9 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .component {
+  /* .component {
     margin-top: 20%;
-  }
+  } */
 
   .gallery-heading span {
     font-size: 3em;
@@ -178,9 +170,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .component {
+  /* .component {
     padding-top: 10%;
-  }
+  } */
 
   .gallery-heading {
     padding: 1em 0;

@@ -51,7 +51,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container">
-      <h1 className="gallery-title mt-16">Explore the SDV Gallery</h1>
+      <h1 className="gallery-title mt-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500">Explore the SDV Gallery</h1>
 
       {expandedImage && (
         <div className="expanded-view">

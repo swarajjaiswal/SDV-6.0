@@ -5,7 +5,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(135deg, #1c1c1c 0%, #242424 100%);
+    /* background: linear-gradient(135deg, #1c1c1c 0%, #242424 100%); */
     color: #fff;
     min-height: 100vh;
     padding-top: 80px;

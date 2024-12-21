@@ -12,7 +12,9 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"   style={{
+      background: "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
+    }}>
       <Sparkles />
       <Router>
         <ScrollToTop />
