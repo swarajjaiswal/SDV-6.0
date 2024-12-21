@@ -68,12 +68,12 @@ const Homepage = () => {
               />
             </div>
           </div>
-
+ <Banner />
           <Countdown />
           <SdvWorkshop />
           <WhySdv />
           {/* <AtAGlance /> */}
-          {/* <Banner /> */}
+         
         </div>
       )}
     </div>
