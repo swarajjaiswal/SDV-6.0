@@ -1,0 +1,182 @@
+.dnd-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 2rem;
+    text-align: center;   
+    overflow: hidden; 
+}
+
+.dnd-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container without distortion */
+    z-index: 0; /* Places the video behind the content */
+}
+
+/* Add a dark overlay */
+.dnd-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+    z-index: 1; /* Ensure it sits above the video but below the text */
+}
+
+.dnd-heading, .dnd-coming {
+    position: relative; /* Ensure the text stays above the overlay */
+    z-index: 2;
+}
+
+.dnd-heading h1 {
+    font-size: 7.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 68px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #78d853, #00e4ff, #2a00ff, #d200ff, #ff0074);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 5s infinite;
+    letter-spacing: 4px;
+}
+
+.dnd-heading h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #78d853, #00e4ff, #2a00ff, #d200ff, #ff0074);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 5s infinite;
+    margin-top: -40px;
+}
+
+.dnd-coming h2 {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: -24px;
+    font-family: 'Expletus Sans';
+    background: linear-gradient(90deg, rgb(242, 178, 2), white);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dnd-coming {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.dnd-coming::before,
+.dnd-coming::after {
+    content: '';
+    flex: 1;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(242, 178, 2, 1), white);
+}
+
+/* Keyframes for text gradient animation */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Media Query: Max Width 1080px */
+@media (max-width: 1080px) {
+    .dnd-heading h1 {
+        font-size: 6.5rem;
+    }
+    .dnd-heading h2 {
+        font-size: 7rem;
+    }
+    .dnd-coming h2 {
+        font-size: 6rem;
+        margin-top: 20px;
+    }
+    .dnd-coming {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem; 
+    }
+    
+    .dnd-coming::before,
+    .dnd-coming::after {
+        content: '';
+        flex: 2;
+        height: 4px;
+        background: linear-gradient(90deg, rgba(242, 178, 2, 1), white);
+        margin-top: 40px;
+    }
+}
+
+/* Media Query: Max Width 720px */
+@media (max-width: 720px) {
+    .dnd-heading h1 {
+        font-size: 5.5rem;
+    }
+    .dnd-heading h2 {
+        font-size: 6rem;
+    }
+    .dnd-coming h2 {
+        font-size: 5rem;
+    }
+    .dnd-container {
+        margin: 1rem;
+    }
+    
+}
+
+/* Media Query: Max Width 480px */
+@media (max-width: 480px) {
+    .dnd-heading h1 {
+        font-size: 5.2rem;
+        margin-top: 50px;
+    }
+    .dnd-heading h2 {
+        font-size: 5.4rem;
+        margin-top: -30px;
+    }
+    .dnd-coming h2 {
+        font-size: 5rem;
+        margin-top: 20px;
+    }
+    .dnd-container {
+        margin: 0.6rem;
+    }
+}
+@media (max-width: 360px) {
+    .dnd-heading h1 {
+        font-size: 4.4rem;
+        margin-top: 50px;
+    }
+    .dnd-heading h2 {
+        font-size: 4.8rem;
+        margin-top: -30px;
+    }
+    .dnd-coming h2 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+    .dnd-container {
+        margin: 0.6rem;
+    }
+}

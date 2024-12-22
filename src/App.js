@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Sparkles from "./components/Sparkles/Sparkles";
 import ScrollToTop from "./components/ScrollToTop";
+import Dnd from './components/Dnd/Dnd';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/components" element={<Component />} />
           <Route path="/team" element={<Team />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/dnd" element={<Dnd />} />
         </Routes>
         <Footer />
       </Router>
