@@ -68,7 +68,7 @@ const Homepage = () => {
               />
             </div>
           </div>
- <Banner />
+ {/* <Banner /> */}
           <Countdown />
           <SdvWorkshop />
           <WhySdv />
