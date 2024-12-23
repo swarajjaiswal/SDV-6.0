@@ -1,7 +1,7 @@
 .dnd-container {
     position: relative;
     min-height: 100vh;
-    margin: 2rem;
+/*     margin: 2rem; */
     text-align: center;   
     overflow: hidden; 
 }
