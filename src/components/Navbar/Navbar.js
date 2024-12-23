@@ -76,7 +76,7 @@ export const Navbar = () => {
                   top: "0",
                   right: "0",
                   filter:
-                    "brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(7495%) hue-rotate(0deg) brightness(98%) contrast(101%)",
+                    "brightness(0) saturate(100%) invert(29%) sepia(77%) saturate(4344%) hue-rotate(278deg) brightness(94%) contrast(92%)",
                 }}
               />
             </div>
