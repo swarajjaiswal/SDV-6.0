@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showRegisterButton, setShowRegisterButton] = useState(false);
+
+  useEffect(() => {
+    // Delay the display of the register button by 1 second
+    const timer = setTimeout(() => {
+      setShowRegisterButton(true);
+    }, 1000);
+
+    // Cleanup the timer to avoid memory leaks
+    return () => clearTimeout(timer);
+  }, []);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -122,12 +133,15 @@ export const Navbar = () => {
           >
             DnD
           </NavLink>
-          <NavLink
-            type="button"
-            className={`relative font-bold text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#63e,0_0_30px_#63e] glow-btn ${isMenuOpen ? "visible open" : "close"}`} 
-          >
-            REGISTER
-          </NavLink>
+
+          {showRegisterButton && (
+            <NavLink
+              type="button"
+              className={`relative font-bold text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#63e,0_0_30px_#63e] glow-btn ${isMenuOpen ? "visible open" : "close"}`}
+            >
+              REGISTER
+            </NavLink>
+          )}
         </div>
       </div>
     </div>
