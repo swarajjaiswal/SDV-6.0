@@ -27,17 +27,17 @@ const Countdown = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [targetDate]);
 
     // Helper function to calculate the progress percentage
     const calculateProgress = (value, max) => (value / max) * 100;
 
     return (
         <div className="h-auto flex flex-col items-center p-16 mb-6">
-<h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 text-center">
-    Workshop goes live in
-</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8  text-white mt-8">
+            <h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D52484] to-[#63e] text-center">
+                Workshop goes live in
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-white mt-8">
                 {/* Render a countdown part for each time unit */}
                 {[
                     { label: "Days", value: timeLeft.days, max: 30 },
@@ -59,7 +59,7 @@ const Countdown = () => {
                                 cy="50"
                                 r="45"
                                 fill="none"
-                                stroke="rgba(128, 0, 128, 0.1)" // Light purple background circle
+                                stroke="rgba(213, 36, 132, 0.2)" // Lighter shade of the provided color
                                 strokeWidth="10"
                             />
                             <circle
@@ -67,7 +67,7 @@ const Countdown = () => {
                                 cy="50"
                                 r="45"
                                 fill="none"
-                                stroke="purple" // Neon purple color
+                                stroke="#D52484" // Provided color
                                 strokeWidth="10"
                                 strokeDasharray="282.743" // Circumference of the circle (2πr)
                                 strokeDashoffset={`${
@@ -77,8 +77,8 @@ const Countdown = () => {
                                 className="animate-progress"
                             />
                         </svg>
-                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10">{value}</div>
-                        <div className="text-xs sm:text-sm md:text-base text-gray-600 z-10">{label}</div>
+                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10 text-[#D52484]">{value}</div>
+                        <div className="text-xs sm:text-sm md:text-base text-gray-600 z-10 text-[#D52484]">{label}</div>
                     </div>
                 ))}
             </div>
@@ -87,4 +87,3 @@ const Countdown = () => {
 };
 
 export default Countdown;
-

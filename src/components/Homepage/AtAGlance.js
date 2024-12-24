@@ -16,22 +16,22 @@ const AtAGlance = () => {
           {/* Registration */}
           <div className="bg-gray-800 bg-opacity-75 rounded-lg p-4 sm:p-6">
             <h3 className="text-lg sm:text-xl font-semibold"># Registrations</h3>
-            <p className="text-3xl sm:text-4xl font-bold text-pink-500">168+</p>
+            <p className="text-3xl sm:text-4xl font-bold" style={{ color: '#D52484' }}>168+</p>
           </div>
           {/* Prize Pool */}
           <div className="bg-gray-800 bg-opacity-75 rounded-lg p-4 sm:p-6">
             <h3 className="text-lg sm:text-xl font-semibold">💰 Registration Amount</h3>
-            <p className="text-3xl sm:text-4xl font-bold text-pink-500">Rs. 3,000</p>
+            <p className="text-3xl sm:text-4xl font-bold" style={{ color: '#D52484' }}>Rs. 3,000</p>
           </div>
           {/* Team Size */}
           <div className="bg-gray-800 bg-opacity-75 rounded-lg p-4 sm:p-6">
             <h3 className="text-lg sm:text-xl font-semibold">👥 Team Size</h3>
-            <p className="text-3xl sm:text-4xl font-bold text-pink-500">1 - 4</p>
+            <p className="text-3xl sm:text-4xl font-bold" style={{ color: '#D52484' }}>1 - 4</p>
           </div>
           {/* Duration */}
           <div className="bg-gray-800 bg-opacity-75 rounded-lg p-4 sm:p-6">
             <h3 className="text-lg sm:text-xl font-semibold">⏱ Duration</h3>
-            <p className="text-3xl sm:text-4xl font-bold text-pink-500">2 Days</p>
+            <p className="text-3xl sm:text-4xl font-bold" style={{ color: '#D52484' }}>2 Days</p>
           </div>
         </div>
       </div>

@@ -28,7 +28,6 @@ const Homepage = () => {
   }, []);
 
   return (
-    
     <div className="homepage min-h-screen flex flex-col">
       <div className="w-full text-center">
         {showAnimatedText && (
@@ -41,7 +40,7 @@ const Homepage = () => {
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-8xl sdv-heading font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 drop-shadow-lg">
+              <p className="text-8xl sdv-heading font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#D52484] to-[#63e] drop-shadow-lg">
                 Self Driving Vehicles
               </p>
               <p className="text-xl text-white mt-4">
@@ -68,12 +67,11 @@ const Homepage = () => {
               />
             </div>
           </div>
- {/* <Banner /> */}
+          {/* <Banner /> */}
           <Countdown />
           <SdvWorkshop />
           <WhySdv />
           {/* <AtAGlance /> */}
-         
         </div>
       )}
     </div>

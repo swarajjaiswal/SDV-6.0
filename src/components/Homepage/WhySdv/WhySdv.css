@@ -47,10 +47,16 @@
     align-items: center;
 }
 
+.text-section li .arrow {
+    margin-right: 8px;
+    color: #D52484;
+    font-size: 1.5em; /* Increase arrow size */
+}
+
 .text-section li::before {
     content: '→'; 
     margin-right: 8px;
-    color: #007BFF;
+    color: #D52484;
 }
 
 /* Responsive adjustments */
