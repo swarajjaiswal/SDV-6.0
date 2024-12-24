@@ -13,7 +13,7 @@
   left: -50%;
   width: 200%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(98, 0, 238, 0.5), rgba(0, 174, 255, 0.5));
+  background: linear-gradient(90deg, #D52484, #63e);
   transform: skewX(-45deg);
   transition: 0.5s ease;
   filter: blur(8px);
@@ -102,7 +102,7 @@
   right: 1rem;
   z-index: 50;
   background: none;
-  color: #d200ff;
+  color: #D52484;
   border: none;
   cursor: pointer;
   transition: transform 0.4s ease-in-out; 
@@ -202,7 +202,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background: rgb(108, 60, 240);
+  background: linear-gradient(90deg, #D52484, #63e);
   transition: 0.5s;
 }
 

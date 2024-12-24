@@ -14,7 +14,7 @@
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, darkviolet, white);
+  background: linear-gradient(90deg, #D52484, #63e);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -41,7 +41,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: rgb(100, 50, 150);
+  background-color: #D52484;
   transition: transform 0.5s ease;
 }
 
@@ -87,7 +87,7 @@
 .gallery-item::before {
   top: 0; /* Position the line at the top */
   height: 8px; /* Make it thicker */
-  background-color: rgb(100, 50, 150);
+  background: linear-gradient(90deg, #D52484, #63e);
   left: 0; /* Align it with the left edge */
 }
 
@@ -95,7 +95,7 @@
   bottom: 0;
   right: 0;
   height: 10px; /* Bottom line thickness */
-  background-color: rgb(100, 50, 150);
+  background: linear-gradient(90deg, #D52484, #63e);
   width: 0%; /* Initially not visible */
 }
 
