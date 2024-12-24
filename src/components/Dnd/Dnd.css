@@ -81,7 +81,7 @@
     content: '';
     flex: 1;
     height: 4px;
-    background: linear-gradient(90deg, rgba(242, 178, 2, 1), white);
+    background: linear-gradient(90deg, #387478, #E2F1E7);
 }
 
 /* Keyframes for text gradient animation */
@@ -123,7 +123,7 @@
         content: '';
         flex: 2;
         height: 4px;
-        background: linear-gradient(90deg, rgba(242, 178, 2, 1), white);
+        background: linear-gradient(90deg, #387478, #E2F1E7);
         margin-top: 40px;
     }
 }

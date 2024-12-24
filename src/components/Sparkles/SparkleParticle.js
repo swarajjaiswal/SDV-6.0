@@ -1,7 +1,8 @@
 import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 
-const SparkleParticle = ({ id, x, y, size, color, velocity }) => {
+const SparkleParticle = ({ id, x, y, size, velocity }) => {
+  const color = '#387478'; // Updated color
   return (
     <motion.div
       className="absolute rounded-full"
@@ -10,18 +11,18 @@ const SparkleParticle = ({ id, x, y, size, color, velocity }) => {
         y,
         scale: 0,
         opacity: 1,
-        rotate: Math.random() * 360,  // Random rotation at start
+        rotate: Math.random() * 360, // Random rotation at start
       }}
       animate={{
         x: x + velocity.x,
         y: y + velocity.y,
         scale: 1,
         opacity: 0,
-        rotate: 360,  // Continuous rotation during particle movement
+        rotate: 360, // Continuous rotation during particle movement
       }}
       transition={{
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94],  // Ease-out effect for smoothness
+        ease: [0.25, 0.46, 0.45, 0.94], // Ease-out effect for smoothness
       }}
       style={{
         width: size,

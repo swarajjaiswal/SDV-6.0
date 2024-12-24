@@ -47,20 +47,20 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-custom-color"></span>
             </h3>
             <nav className="space-y-4 flex flex-col">
-              <NavLink to="/" className="hover:text-[rgb(148,99,247)]">
+              <NavLink to="/" className="hover:text-[rgb(56,116,120)]">
                 Home
               </NavLink>
               <NavLink
                 to="/components"
-                className="hover:text-[rgb(148,99,247)]"
+                className="hover:text-[rgb(56,116,120)]"
               >
                 Components
               </NavLink>
 
-              <NavLink to="/gallery" className="hover:text-[rgb(148,99,247)]">
+              <NavLink to="/gallery" className="hover:text-[rgb(56,116,120)]">
                 Gallery
               </NavLink>
-              <NavLink to="/" className="hover:text-[rgb(148,99,247)]">
+              <NavLink to="/" className="hover:text-[rgb(56,116,120)]">
                 Register
               </NavLink>
             </nav>
@@ -82,29 +82,28 @@ const Footer = () => {
                 target="_blank"
                 aria-label="YouTube"
               >
-                <Youtube className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
-              
+                <Youtube className="w-7 h-7 hover:text-[rgb(56,116,120)]" />
               </a>
               <a
                 href="https://www.linkedin.com/company/sae-nitdgp/"
                 target="_blank"
                 aria-label="LinkedIn"
               >
-                <LinkedinIcon className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
+                <LinkedinIcon className="w-7 h-7 hover:text-[rgb(56,116,120)]" />
               </a>
               <a
                 href="https://www.instagram.com/sae.nitd"
                 target="_blank"
                 aria-label="Instagram"
               >
-                <InstagramIcon className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
+                <InstagramIcon className="w-7 h-7 hover:text-[rgb(56,116,120)]" />
               </a>
               <a
                 href="https://www.facebook.com/SAENITD"
                 target="_blank"
                 aria-label="Facebook"
               >
-                <Facebook className="w-7 h-7 hover:text-[rgb(148,99,247)]" />
+                <Facebook className="w-7 h-7 hover:text-[rgb(56,116,120)]" />
               </a>
             </div>
           </div>
