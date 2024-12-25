@@ -13,7 +13,7 @@
   left: -50%;
   width: 200%;
   height: 100%;
-  background: #387478;
+  background: #02296d;
   transform: skewX(-45deg);
   transition: 0.5s ease;
   filter: blur(8px);
@@ -27,16 +27,16 @@
 
 .glow-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 4px 15px #387478, 0px 7px 20px #E2F1E7;
+  box-shadow: 0px 4px 15px #0FF, 0px 7px 20px #E2F1E7;
 }
 
 /* Add hover animations for text */
 .glow-btn:hover {
-  background: linear-gradient(to right, #387478, #E2F1E7);
+  background: linear-gradient(to right, #0FF, #E2F1E7);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0px 0px 8px #387478, 0px 0px 16px #E2F1E7;
+  text-shadow: 0px 0px 8px #0FF, 0px 0px 16px #E2F1E7;
 }
 
 
@@ -102,7 +102,7 @@
   right: 1rem;
   z-index: 50;
   background: none;
-  color: #387478;
+  color: #0FF;
   border: none;
   cursor: pointer;
   transition: transform 0.4s ease-in-out; 
@@ -202,7 +202,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #387478, #E2F1E7,#387478);
+  background: linear-gradient(74deg, #0FF, #aaf0d1,#0FF);
   transition: 0.5s;
 }
 

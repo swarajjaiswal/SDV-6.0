@@ -62,7 +62,7 @@
     font-weight: 700;
     margin-top: -24px;
     font-family: 'Expletus Sans';
-    background: linear-gradient(90deg, rgb(242, 178, 2), white);
+    background: linear-gradient(90deg, #FFD700, white);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -81,7 +81,7 @@
     content: '';
     flex: 1;
     height: 4px;
-    background: linear-gradient(90deg, #387478, #E2F1E7);
+    background: linear-gradient(90deg, rgb(124, 250, 250), #E2F1E7);
 }
 
 /* Keyframes for text gradient animation */

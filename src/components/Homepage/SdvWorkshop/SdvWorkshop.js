@@ -4,7 +4,7 @@ const SdvWorkshop = () => {
   return (
     <div className="relative flex flex-col items-center mb-8 bg-gradient-to-b p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="text-center space-y-4 sm:space-y-6 md:space-y-8 animate-fade-in">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#387478] to-[#E2F1E7] drop-shadow-lg">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0FF] to-[#0FF] drop-shadow-lg">
           About SDV Workshop
         </h1>
       </div>
@@ -19,9 +19,9 @@ const SdvWorkshop = () => {
         </div>
 
         <div className="sm:w-1/2 text-center sm:text-left sm:pr-4 md:pr-6">
-          <p className="text-sm sm:text-base md:text-sm lg:text-2xl text-purple-200 tracking-wide leading-relaxed">
+          <p className="text-sm sm:text-base md:text-sm lg:text-2xl text-[#F5F5F5] tracking-wide leading-relaxed">
             Explore the future of{" "}
-            <span className="text-[#387478]">Self-Driving Vehicles</span> in this
+            <span className="text-[#FFD700]">Self-Driving Vehicles</span> in this
             immersive workshop.
             <br />
             Unlock innovation, learn cutting-edge technology, and drive
@@ -36,8 +36,8 @@ const SdvWorkshop = () => {
           <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-4">
             <a
               href="#register"
-              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#387478] 
-                   text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
+              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#87a96b] 
+                   text-[#004225] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
                    hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Register Now
@@ -45,8 +45,8 @@ const SdvWorkshop = () => {
 
             <a
               href="#learn-more"
-              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#387478] 
-                   text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
+              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#87a96b] 
+                   text-[#004225] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
                    hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Learn More

@@ -33,7 +33,7 @@
 
 .text-section h2 {
     margin-bottom: 20px;
-    background: linear-gradient(to right, #387478, #E2F1E7); /* Added gradient to heading */
+    background: #0FF; /* Added gradient to heading */
     -webkit-background-clip: text; 
     color: transparent; /* Make the text transparent so the gradient shows */
    /* Increase the size of the heading for more impact */
@@ -50,23 +50,23 @@
     align-items: center;
     
     -webkit-background-clip: text;
-    color: white; /* Make the text transparent so the gradient shows */
+    color: #FAFAFA; /* Make the text transparent so the gradient shows */
 }
 
 .text-section li .arrow {
     margin-right: 8px;
-    color: white; /* Arrow points text is now white */
+    color: #FAFAFA; /* Arrow points text is now white */
     font-size: 1.5em; /* Increase arrow size */
 }
 
 .text-section li span {
-    color: white; /* The text after the arrow points will be white */
+    color: #FAFAFA; /* The text after the arrow points will be white */
 }
 
 .text-section li::before {
     content: '→'; 
     margin-right: 8px;
-    color: white; /* Arrow points are now white */
+    color: #0FF; /* Arrow points are now white */
 }
 
 /* Responsive adjustments */

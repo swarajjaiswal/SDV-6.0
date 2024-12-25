@@ -34,10 +34,10 @@ const Countdown = () => {
 
     return (
         <div className="h-auto flex flex-col items-center p-16 mb-6">
-            <h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#387478] to-[#E2F1E7] text-center">
+            <h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0FF] to-[#0FF] text-center">
                 Workshop goes live in
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-white mt-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-[#0FF] mt-8">
                 {/* Render a countdown part for each time unit */}
                 {[
                     { label: "Days", value: timeLeft.days, max: 30 },
@@ -67,7 +67,7 @@ const Countdown = () => {
                                 cy="50"
                                 r="45"
                                 fill="none"
-                                stroke="#387478" // Provided color
+                                stroke="#a3c2ad" // Provided color
                                 strokeWidth="10"
                                 strokeDasharray="282.743" // Circumference of the circle (2πr)
                                 strokeDashoffset={`${
@@ -77,12 +77,17 @@ const Countdown = () => {
                                 className="animate-progress"
                             />
                         </svg>
-                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10 text-[#387478]">{value}</div>
-                        <div className="text-xs sm:text-sm md:text-base text-gray-600 z-10 text-[#E2F1E7]">{label}</div>
+                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10 text-[#aaf0d1]">
+                            {value}
+                        </div>
+                        <div className="text-xs sm:text-sm md:text-base z-10 text-[#aaf0d1]">
+                            {label}
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
+    
     );
 };
 
