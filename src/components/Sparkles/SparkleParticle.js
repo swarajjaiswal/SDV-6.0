@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 
 const SparkleParticle = ({ id, x, y, size, velocity }) => {
-  const color = '#0FF'; // Updated color
+  const color = '#CA3435'
   return (
     <motion.div
       className="absolute rounded-full"

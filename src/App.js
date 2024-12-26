@@ -14,7 +14,7 @@ import Dnd from './components/Dnd/Dnd';
 function App() {
   return (
     <div className="App"   style={{
-      background: "radial-gradient(125% 125% at 50% 10%, #000 40%, #387478 100%)",
+      background: "radial-gradient(125% 125% at 50% 10%, #000 40%,rgb(124, 53, 53) 100%)",
     }}>
       <Sparkles />
       <Router>

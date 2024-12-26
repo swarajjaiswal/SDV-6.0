@@ -14,7 +14,7 @@
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: linear-gradient(60deg, #0FF, #b2f1c8,#0FF);
+  background: linear-gradient(60deg, rgb(215, 40, 40), #e79898,rgb(215, 40, 40));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -41,7 +41,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #f8e891, #c5fbd7,#f8e891);
+  background: linear-gradient(90deg, rgb(215, 40, 40), #fd6262, rgb(215, 40, 40));
   transition: transform 0.5s ease;
 }
 
@@ -87,7 +87,7 @@
 .gallery-item::before {
   top: 0; /* Position the line at the top */
   height: 8px; /* Make it thicker */
-  background: linear-gradient(90deg, #0FF, #E2F1E7,rgba(246, 200, 72, 0.844),#0FF);
+  background: linear-gradient(90deg, rgb(215, 40, 40), #f47979, rgb(215, 40, 40));
   left: 0; /* Align it with the left edge */
 }
 
@@ -95,7 +95,7 @@
   bottom: 0;
   right: 0;
   height: 10px; /* Bottom line thickness */
-  background: linear-gradient(90deg, #0FF,#E2F1E7, rgba(246, 200, 72, 0.844),#0FF);
+  background: linear-gradient(90deg, rgb(215, 40, 40), #f47979, rgb(215, 40, 40));
   width: 0%; /* Initially not visible */
 }
 

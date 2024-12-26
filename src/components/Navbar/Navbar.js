@@ -87,8 +87,7 @@ export const Navbar = () => {
                   top: "0",
                   right: "0",
                   filter:
-                  "brightness(0) saturate(500%) invert(70%) sepia(30%) saturate(1200%) hue-rotate(180deg) brightness(100%) contrast(250%)",
-
+                    "brightness(0) saturate(500%) invert(70%) sepia(30%) saturate(1200%) hue-rotate(180deg) brightness(100%) contrast(250%)",
                 }}
               />
             </div>
@@ -136,13 +135,14 @@ export const Navbar = () => {
           </NavLink>
 
           {showRegisterButton && (
-            <NavLink
-              type="button"
-              className={`relative font-bold text-white bg-gradient-to-br from-[#387478] to-[#387478] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-[#387478] dark:focus:ring-[#387478] rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#387478,0_0_30px_#387478] glow-btn ${isMenuOpen ? "visible open" : "close"}`}
-            >
-              REGISTER
-            </NavLink>
-          )}
+  <NavLink
+    type="button"
+    className={`relative font-bold text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-500 dark:focus:ring-red-500 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#387478,0_0_30px_#387478] glow-btn ${isMenuOpen ? "visible open" : "close"}`}
+  >
+    REGISTER
+  </NavLink>
+)}
+
         </div>
       </div>
     </div>

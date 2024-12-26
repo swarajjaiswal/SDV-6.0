@@ -48,7 +48,7 @@ const AnimatedText = ({ onAnimationComplete }) => {
         <filter id="glowFilter" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blurred" />
           <feOffset in="blurred" dx="0" dy="0" result="offsetBlurred" />
-          <feFlood floodColor="#387478" result="glowColor" /> {/* Updated glow color */}
+          <feFlood floodColor="#CA3435" result="glowColor" /> {/* Updated glow color to red */}
           <feComposite in="glowColor" in2="offsetBlurred" operator="in" />
           <feMerge>
             <feMergeNode />
@@ -66,7 +66,7 @@ const AnimatedText = ({ onAnimationComplete }) => {
           fontFamily: '"Protest Guerrilla", sans-serif',
           fontSize: "150px",
           letterSpacing: "5px",
-          stroke: "#387478",  
+          stroke: "#CA3435",  // Updated stroke color to red
           strokeWidth: "1px",
           strokeDasharray: "500",
           strokeDashoffset: "500",
