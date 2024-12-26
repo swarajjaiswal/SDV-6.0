@@ -37,7 +37,7 @@ const SdvWorkshop = () => {
             <a
               href="#register"
               className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
-                   text-[#004225] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
+                   text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
                    hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Register Now
@@ -46,7 +46,7 @@ const SdvWorkshop = () => {
             <a
               href="#learn-more"
               className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
-                   text-[#004225] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
+                   text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
                    hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Learn More

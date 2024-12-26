@@ -102,7 +102,7 @@
   right: 1rem;
   z-index: 50;
   background: none;
-  color: #0FF;
+  color: rgb(233, 43, 14);
   border: none;
   cursor: pointer;
   transition: transform 0.4s ease-in-out; 

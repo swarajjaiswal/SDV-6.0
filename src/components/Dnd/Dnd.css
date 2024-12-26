@@ -38,7 +38,7 @@
     text-transform: uppercase;
     margin-top: 68px;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #78d853, #00e4ff, #2a00ff, #d200ff, #ff0074);
+    background: linear-gradient(90deg, #ff0000, #ff7300);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@
 .dnd-heading h2 {
     font-size: 7.6rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #78d853, #00e4ff, #2a00ff, #d200ff, #ff0074);
+    background: linear-gradient(90deg, #ff0000, #ff7300);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -81,7 +81,7 @@
     content: '';
     flex: 1;
     height: 4px;
-    background: linear-gradient(90deg, rgb(124, 250, 250), #E2F1E7);
+    background: linear-gradient(90deg, rgb(236, 80, 18), #E2F1E7);
 }
 
 /* Keyframes for text gradient animation */

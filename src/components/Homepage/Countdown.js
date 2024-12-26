@@ -77,10 +77,10 @@ const Countdown = () => {
                                 className="animate-progress"
                             />
                         </svg>
-                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10 text-red-500">
+                        <div className="number text-xl sm:text-2xl md:text-3xl font-semibold z-10 text-white">
                             {value}
                         </div>
-                        <div className="text-xs sm:text-sm md:text-base z-10 text-red-500">
+                        <div className="text-xs sm:text-sm md:text-base z-10 text-white">
                             {label}
                         </div>
                     </div>
