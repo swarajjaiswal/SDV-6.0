@@ -10,7 +10,11 @@ import Gallery from './components/Gallery/Gallery';
 import Sparkles from "./components/Sparkles/Sparkles";
 import ScrollToTop from "./components/ScrollToTop";
 import Dnd from './components/Dnd/Dnd';
+<<<<<<< HEAD
 import Whysdv from './components/Whysdv/Whysdv';
+=======
+import Sponsors from "./components/Sponsors/Sponsors";
+>>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
           <Route path="/components" element={<Component />} />
           <Route path="/team" element={<Team />} />
           <Route path="/Gallery" element={<Gallery />} />
+<<<<<<< HEAD
           <Route path="/whysdv" element={<Whysdv />} />
+=======
+          <Route path="/sponsors" element={<Sponsors />} />
+>>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
           <Route path="/dnd" element={<Dnd />} />
         </Routes>
         <Footer />

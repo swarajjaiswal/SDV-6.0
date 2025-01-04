@@ -125,15 +125,25 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
+<<<<<<< HEAD
             to="/whysdv"
+=======
+            to="/sponsors"
+>>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }
             onClick={closeMenu}
           >
+<<<<<<< HEAD
             why sdv
           </NavLink>
           <NavLink
+=======
+           Sponsors
+          </NavLink>
+         { <NavLink
+>>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
             to="/dnd"
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
@@ -142,7 +152,7 @@ export const Navbar = () => {
           >
             DnD
           </NavLink>
-
+}
           {showRegisterButton && (
   <NavLink
     type="button"
