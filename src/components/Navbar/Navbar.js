@@ -125,6 +125,15 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
+            to="/sponsors"
+            className={({ isActive }) =>
+              isActive ? "nav-item active" : "nav-item"
+            }
+            onClick={closeMenu}
+          >
+           Sponsors
+          </NavLink>
+         { <NavLink
             to="/dnd"
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
@@ -133,7 +142,7 @@ export const Navbar = () => {
           >
             DnD
           </NavLink>
-
+}
           {showRegisterButton && (
   <NavLink
     type="button"
