@@ -137,11 +137,11 @@
       }
     .photo1 img{
         width: 300px;
-        height: 90px;
+        height: 94px;
       }
     .photo2 img {
       width: 300px;
-      height: 90px;
+      height: 94px;
     }
   
     .media-right h3,
@@ -151,4 +151,88 @@
       margin-right: 5px;
     }
   }
+  @media screen and (max-width: 912px){
+    .media-right {
+        flex: 1 1;
+        text-align: left;
+        margin: 10px;
+      }
+  }
+  @media screen and (width: 540px){
+    
+    .video1 video{
+        width: 300px;
+        height: auto;
+      }
+    .video2 video{
+        width: 300px;
+        height: auto;
+      }
+    .photo1 img{
+        width: 300px;
+        height: 142px;
+      }
+    .photo2 img {
+      width: 300px;
+      height: 142px;
+    }
+    .media-row {
+        flex-direction: row; /* Maintain side-by-side alignment */
+        justify-content: center;
+        gap: 10px;
+        margin-right: 14px;
+      }
+  }
+  @media screen and (width: 1024px) {
+    .why-heading h1 {
+      font-size: 3.2rem; /* Adjust heading size for better fit */
+    }
   
+    .media-container {
+      flex-direction: row; /* Keep items side by side */
+      justify-content: space-around; /* Adjust spacing */
+      gap: 15px; /* Reduce gap between items */
+    }
+  
+    .media-row {
+      flex-direction: row; /* Maintain side-by-side alignment */
+      justify-content: center; /* Center-align items */
+      gap: 15px;
+    }
+  
+    .media-item {
+      flex: 1 1 auto; /* Adjust flex properties for better alignment */
+      max-width: 320px; /* Ensure consistent width */
+    }
+  
+    .video1 video,
+    .video2 video {
+      width: 320px; /* Scale video size */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .photo1 img,
+    .photo2 img {
+      width: 320px; /* Scale image size */
+      height: 180px; /* Adjust height */
+    }
+  
+    .media-right {
+      flex: 1 1 auto;
+      margin: 20px;
+      text-align: center; /* Center text alignment */
+    }
+  
+    .media-right h3 {
+      font-size: 1.3rem; /* Adjust font size */
+      margin-bottom: 15px; /* Adjust spacing */
+      margin-left: 5px; /* Reduce left margin */
+      margin-right: 5px; /* Reduce right margin */
+    }
+  
+    .media-right p {
+      font-size: 1.2rem; /* Adjust font size */
+      margin: 0 10px; /* Adjust horizontal margins */
+      line-height: 1.5; /* Tweak line height for readability */
+    }
+  }
