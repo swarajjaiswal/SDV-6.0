@@ -125,6 +125,15 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
+            to="/whysdv"
+            className={({ isActive }) =>
+              isActive ? "nav-item active" : "nav-item"
+            }
+            onClick={closeMenu}
+          >
+            why sdv
+          </NavLink>
+          <NavLink
             to="/dnd"
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"

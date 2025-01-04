@@ -1,0 +1,143 @@
+.why-container {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .why-heading h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+    margin-top: 24px;
+    color: rgb(241, 13, 13);
+  }
+  
+  /* Media Container */
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    margin-left: 26px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Row containing the media items (video + image) */
+  .media-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Media item (video or image) styling */
+  .media-item {
+    flex: 1;
+  }
+  
+  .video1 video,
+  .video2 video {
+    width: 360px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .photo1 img,
+  .photo2 img {
+    width: 360px;
+    height: 202px;
+    border-radius: 10px;
+  }
+  
+  /* Content on the right side */
+  .media-right {
+    flex: 1;
+    margin: 10px;
+    margin-top: -180px;
+    text-align: left;
+  }
+  
+  .media-right h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+  }
+  
+  .media-right p {
+    font-size: 1.4rem;
+    margin-right: 14px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .why-heading h1 {
+      font-size: 2.8rem;
+    }
+  
+    .media-container {
+      flex-direction: row; /* Keep items side by side */
+      justify-content: center;
+    }
+  
+    .media-row {
+      flex-direction: row; /* Keep media items aligned side by side */
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .media-item {
+      width: auto;
+      max-width: none;
+    }
+  
+    .media-right {
+      margin-top: 20px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .media-right h3,
+    .media-right p {
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .why-heading h1 {
+      font-size: 2rem;
+    }
+  
+    .media-container {
+      flex-direction: row; /* Keep items side by side */
+      justify-content: center;
+    }
+  
+    .media-row {
+      flex-direction: row; /* Maintain side-by-side alignment */
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .video1 video,
+    .video2 video,
+    .photo1 img,
+    .photo2 img {
+      width: 300px;
+      height: auto;
+    }
+  
+    .media-right h3,
+    .media-right p {
+      font-size: 1rem;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  

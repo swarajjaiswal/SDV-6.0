@@ -1,7 +1,7 @@
 .dnd-container {
     position: relative;
     min-height: 100vh;
-/*     margin: 2rem; */
+    margin: 1.5rem; 
     text-align: center;   
     overflow: hidden; 
 }
@@ -12,8 +12,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video fills the container without distortion */
-    z-index: 0; /* Places the video behind the content */
+    object-fit: cover; 
+    z-index: 0; 
 }
 
 /* Add a dark overlay */
@@ -23,12 +23,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
-    z-index: 1; /* Ensure it sits above the video but below the text */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
 }
 
 .dnd-heading, .dnd-coming {
-    position: relative; /* Ensure the text stays above the overlay */
+    position: relative; 
     z-index: 2;
 }
 
@@ -84,7 +84,6 @@
     background: linear-gradient(90deg, rgb(236, 80, 18), #E2F1E7);
 }
 
-/* Keyframes for text gradient animation */
 @keyframes gradient-shift {
     0% {
         background-position: 0%;
@@ -97,7 +96,6 @@
     }
 }
 
-/* Media Query: Max Width 1080px */
 @media (max-width: 1080px) {
     .dnd-heading h1 {
         font-size: 6.5rem;
@@ -128,7 +126,6 @@
     }
 }
 
-/* Media Query: Max Width 720px */
 @media (max-width: 720px) {
     .dnd-heading h1 {
         font-size: 5.5rem;
@@ -145,7 +142,6 @@
     
 }
 
-/* Media Query: Max Width 480px */
 @media (max-width: 480px) {
     .dnd-heading h1 {
         font-size: 4.4rem;
