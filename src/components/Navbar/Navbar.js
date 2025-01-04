@@ -125,15 +125,6 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
-            to="/sponsors"
-            className={({ isActive }) =>
-              isActive ? "nav-item active" : "nav-item"
-            }
-            onClick={closeMenu}
-          >
-            Sponsors
-          </NavLink>
-          <NavLink
 
             to="/whysdv"
 
@@ -147,6 +138,16 @@ export const Navbar = () => {
 
             why sdv
           </NavLink>
+          <NavLink
+            to="/sponsors"
+            className={({ isActive }) =>
+              isActive ? "nav-item active" : "nav-item"
+            }
+            onClick={closeMenu}
+          >
+            Sponsors
+          </NavLink>
+          
 
          { <NavLink
 
