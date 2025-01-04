@@ -34,29 +34,28 @@ const WordFlick = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (forwards) {
-        if (offset >= words[index].length) {
-          setSkipCount((prev) => prev + 1);
-          if (skipCount === skipDelay) {
-            setForwards(false);
-            setSkipCount(0);
-          }
+        if (offset < words[index].length) {
+          setOffset(offset + 1);
+        } else if (skipCount < skipDelay) {
+          setSkipCount(skipCount + 1);
         } else {
-          setOffset((prev) => prev + 1);
+          setForwards(false);
+          setSkipCount(0);
         }
       } else {
-        if (offset === 0) {
-          setForwards(true);
-          setIndex((prev) => (prev + 1) % words.length);
+        if (offset > 0) {
+          setOffset(offset - 1);
         } else {
-          setOffset((prev) => prev - 1);
+          setForwards(true);
+          setIndex((index + 1) % words.length);
         }
       }
 
-      setPart(words[index].substr(0, offset));
+      setPart(words[index].substring(0, offset));
     }, speed);
 
     return () => clearInterval(interval);
-  }, [words, index, offset, forwards, skipCount]);
+  }, [index, offset, forwards, skipCount]); // Removed words from dependencies
 
   return (
     <div style={containerStyle}>

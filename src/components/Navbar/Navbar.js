@@ -125,25 +125,31 @@ export const Navbar = () => {
             Gallery
           </NavLink>
           <NavLink
-<<<<<<< HEAD
-            to="/whysdv"
-=======
             to="/sponsors"
->>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }
             onClick={closeMenu}
           >
-<<<<<<< HEAD
-            why sdv
+            Sponsors
           </NavLink>
           <NavLink
-=======
-           Sponsors
+
+            to="/whysdv"
+
+            
+
+            className={({ isActive }) =>
+              isActive ? "nav-item active" : "nav-item"
+            }
+            onClick={closeMenu}
+          >
+
+            why sdv
           </NavLink>
+
          { <NavLink
->>>>>>> 45138a4d0cfa7549b7095cfda04c96364ec5096f
+
             to="/dnd"
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
