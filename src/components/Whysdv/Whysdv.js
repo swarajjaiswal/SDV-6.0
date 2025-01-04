@@ -47,6 +47,7 @@ const Whysdv = () => {
             movement, every part plays a crucial role in bringing your ideas to life.
             Whether you're a beginner or an advanced builder, this kit equips you to
             explore the exciting world of autonomous technology.
+            You can also customize it by addin your own features, to make your self-driving car stand out.
           </p>
         </div>
       </div>

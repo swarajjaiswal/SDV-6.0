@@ -61,6 +61,7 @@
   .media-right h3 {
     font-size: 1.4rem;
     margin-bottom: 20px;
+    color: rgb(238, 81, 81);
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
   }
@@ -111,7 +112,7 @@
   
   @media screen and (max-width: 480px) {
     .why-heading h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
   
     .media-container {
