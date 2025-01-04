@@ -123,14 +123,24 @@
       flex-direction: row; /* Maintain side-by-side alignment */
       justify-content: center;
       gap: 10px;
+      margin-right: 14px;
     }
   
-    .video1 video,
-    .video2 video,
-    .photo1 img,
+    .video1 video{
+        width: 300px;
+        height: auto;
+      }
+    .video2 video{
+        width: 300px;
+        height: auto;
+      }
+    .photo1 img{
+        width: 300px;
+        height: 90px;
+      }
     .photo2 img {
       width: 300px;
-      height: auto;
+      height: 90px;
     }
   
     .media-right h3,
