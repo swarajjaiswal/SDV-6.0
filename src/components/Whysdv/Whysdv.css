@@ -236,3 +236,16 @@
       line-height: 1.5; /* Tweak line height for readability */
     }
   }
+  /* Gallery Heading Styling */
+h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Center align the text */
+    color:red; /* Set a dark color for the text */
+    margin-bottom: 20px; /* Space between the heading and the gallery */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Add some letter spacing for a modern look */
+    position: relative;
+  }
+  
