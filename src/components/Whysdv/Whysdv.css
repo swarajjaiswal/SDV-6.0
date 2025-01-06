@@ -17,11 +17,10 @@
   /* Media Container */
   .media-container {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 26px;
-    margin-left: 26px;
-    gap: 20px;
-    justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the entire container */
+  gap: 20px;
+  margin: 20px auto; /* Center container horizontally */
   }
   
   /* Row containing the media items (video + image) */
@@ -38,15 +37,15 @@
   
   .video1 video,
   .video2 video {
-    width: 360px;
+    width: 580px;
     height: auto;
     border-radius: 10px;
   }
   
   .photo1 img,
   .photo2 img {
-    width: 360px;
-    height: 202px;
+    width: 580px;
+    height: 326px;
     border-radius: 10px;
   }
   
@@ -54,14 +53,16 @@
   .media-right {
     flex: 1;
     margin: 10px;
-    margin-top: -180px;
+    margin-top: 0px;
     text-align: left;
+    text-align: center;
   }
   
   .media-right h3 {
     font-size: 1.4rem;
     margin-bottom: 20px;
     color: rgb(238, 81, 81);
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
   }
@@ -75,7 +76,7 @@
   }
   
   /* Responsive Styles */
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .why-heading h1 {
       font-size: 2.8rem;
     }
@@ -108,9 +109,26 @@
       margin-right: 0;
       font-size: 1.2rem;
     }
+    
+    .video1 video{
+      width: 300px;
+      height: auto;
+    }
+  .video2 video{
+      width: 300px;
+      height: auto;
+    }
+  .photo1 img{
+      width: 300px;
+      height: 166px;
+    }
+  .photo2 img {
+    width: 300px;
+    height: 166px;
   }
-  
-  @media screen and (max-width: 480px) {
+  }
+
+  @media (max-width: 480px) {
     .why-heading h1 {
       font-size: 2.4rem;
     }
@@ -118,6 +136,7 @@
     .media-container {
       flex-direction: row; /* Keep items side by side */
       justify-content: center;
+      margin-left: 16px;
     }
   
     .media-row {
@@ -137,11 +156,11 @@
       }
     .photo1 img{
         width: 300px;
-        height: 94px;
+        height: 98px;
       }
     .photo2 img {
       width: 300px;
-      height: 94px;
+      height: 98px;
     }
   
     .media-right h3,
@@ -151,14 +170,30 @@
       margin-right: 5px;
     }
   }
-  @media screen and (max-width: 912px){
+  @media  (min-width: 820px) and  (max-width: 920px){
     .media-right {
         flex: 1 1;
         text-align: left;
         margin: 10px;
       }
+      .video1 video{
+        width: 300px;
+        height: auto;
+      }
+    .video2 video{
+        width: 300px;
+        height: auto;
+      }
+    .photo1 img{
+        width: 300px;
+        height: 166px;
+      }
+    .photo2 img {
+      width: 300px;
+      height: 166px;
+    }
   }
-  @media screen and (width: 540px){
+  @media (width: 540px){
     
     .video1 video{
         width: 300px;
@@ -180,10 +215,11 @@
         flex-direction: row; /* Maintain side-by-side alignment */
         justify-content: center;
         gap: 10px;
-        margin-right: 14px;
+        margin-left:10px;
+        margin-right:10px;
       }
   }
-  @media screen and (width: 1024px) {
+  @media (width: 1024px) {
     .why-heading h1 {
       font-size: 3.2rem; /* Adjust heading size for better fit */
     }

@@ -1,6 +1,5 @@
 import React from "react";
 import WordFlick from "./WordFlick";
-import PhotoGrid from "./PhotoGrid";
 import "./Whysdv.css";
 const photos = [
   { src: "sdv1.jpg", alt: "Photo 1" },{ src: "sdv12.jpg", alt: "Photo 2" },
@@ -53,7 +52,9 @@ const Whysdv = () => {
             </video>
           </div>
         </div>
-        <div className="media-right">
+        
+      </div>
+      <div className="media-right">
           <h3>An event where creativity meets technology, allowing students to design, build, and test their own self-driving car prototypes.</h3>
           <p>
             This kit is the foundation of your self-driving car prototype. It
@@ -65,11 +66,6 @@ const Whysdv = () => {
             You can also customize it by addin your own features, to make your self-driving car stand out.
           </p>
         </div>
-      </div>
-      <div >
-      <h1>Gallery</h1>
-      <PhotoGrid photos={photos} />
-    </div>
     </div>
   );
 };
