@@ -19,7 +19,7 @@ const SdvWorkshop = () => {
         </div>
 
         <div className="sm:w-1/2 text-center sm:text-left sm:pr-4 md:pr-6">
-          <p className="text-sm sm:text-base md:text-sm lg:text-2xl text-[#F5F5F5] tracking-wide leading-relaxed">
+          {/* <p className="text-sm sm:text-base md:text-sm lg:text-2xl text-[#F5F5F5] tracking-wide leading-relaxed">
             Explore the future of{" "}
             <span className="text-red-500">Self-Driving Vehicles</span> in this
             immersive workshop.
@@ -31,9 +31,9 @@ const SdvWorkshop = () => {
             Driverless cars are a success, proving our progress. Using computer
             tech in transportation enhances safety and reliability, paving the
             way for a safer, easier future.
-          </p>
+          </p> */}
 
-          <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-4">
+          <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-8 sm:space-x-8 md:space-x-10">
             <a
               href="#register"
               className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
@@ -44,7 +44,7 @@ const SdvWorkshop = () => {
             </a>
 
             <a
-              href="#learn-more"
+              href="/whysdv"
               className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
                    text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
                    hover:shadow-xl transform hover:scale-105 transition-all duration-300"

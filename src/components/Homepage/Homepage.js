@@ -37,26 +37,38 @@ const Homepage = () => {
 
       {showOtherContent && (
         <div className="">
+          <div className="flex-2">
+              <img
+                src="/dopamine.png"
+                alt="dopamine-image"
+                
+              />
+              
+
+          </div>
+          <div className="dopamine">
+                <p>Presented by <span>The Dopamine Store</span></p>
+              </div>
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-8xl sdv-heading font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
-                Self Driving Vehicles
+              <p className="sdv-heading  font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
+                Self Driving Vehicles 6.0
               </p>
-              <p className="text-xl text-[#FAFAFA] mt-4">
+              <p className="text-2xl text-[#FAFAFA] mt-4">
                 Discover the future of autonomous transportation with advanced
                 technology and innovation.
               </p>
               <div className="mt-6">
                 <p className="flex items-center">
                   <MapPin className="mr-2 text-[#C10000]" /> {/* Icon color */}
-                  <span className="text-white"> {/* Text color */}
+                  <span className="text-white text-2xl" > {/* Text color */}
                     National Institute of Technology Durgapur
                   </span>
                 </p>
                 <p className="flex items-center mt-2">
                   <CalendarDays className="mr-2 text-[#C10000]" /> {/* Icon color */}
-                  <span className="text-white"> {/* Text color */}
+                  <span className="text-white text-2xl"> {/* Text color */}
                     18th-19th January, 2025
                   </span>
                 </p>
@@ -68,7 +80,7 @@ const Homepage = () => {
               <img
                 src="https://i.ibb.co/r0bz453/1-removebg.png"
                 alt="Car Image"
-                className="w-full rounded-lg"
+                
               />
             </div>
           </div>
