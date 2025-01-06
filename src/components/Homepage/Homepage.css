@@ -27,7 +27,6 @@
     justify-content: flex-end;
   }
 
- 
    @media (width: 1024px){
     .sdv-heading{
       font-size: 72px;
@@ -127,7 +126,7 @@
   .flex-2{
     width: 50%;
     margin-left: 320px;
-    margin-top: 0px;
+    margin-top: -48px;
     margin-bottom: -120px;
   }
   .dopamine{
