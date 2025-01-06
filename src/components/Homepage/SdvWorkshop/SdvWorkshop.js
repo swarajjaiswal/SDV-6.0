@@ -4,7 +4,7 @@ const SdvWorkshop = () => {
   return (
     <div className="relative flex flex-col items-center mb-8 bg-gradient-to-b p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="text-center space-y-4 sm:space-y-6 md:space-y-8 animate-fade-in">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
+        <h1 className="text-2xl font-antons sm:text-3xl  md:text-4xl lg:text-6xl  text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg tracking-wider ">
           About SDV Workshop
         </h1>
       </div>

@@ -48,9 +48,9 @@ const cardParagraphs = [
 
 const Component = () => {
   return (
-    <div className="component">
-      <h1 className="gallery-heading">
-        <span className='text-center'>KNOW YOUR COMPONENTS</span>
+    <div className="component ">
+      <h1 className="gallery-heading ">
+        <span className='text-center '>KNOW YOUR COMPONENTS</span>
       </h1>
       <div className="card-container">
         {images.map((image, index) => (

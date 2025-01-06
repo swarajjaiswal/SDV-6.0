@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Cal Sans';
+    src: url('../ASSETS/CalSans-SemiBold.woff2') format('woff2'),
+         url('../ASSETS/CalSans-SemiBold.woff') format('woff')
+         url("../ASSETS/CalSans-SemiBold.ttf") format('ttf');      
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
 .homepage {
     display: flex;
     flex-direction: column;
@@ -7,11 +15,11 @@
     
   }
   .sdv-heading{
-    font-size: 4rem;
-    font-style: "ANTON";
+    font-size: 4.4rem;
     justify-content:center ;
     text-align: center;
     align-items: center;
+    letter-spacing: 2px;
   }
   .flex-1 img{
     width: 78%;
@@ -128,10 +136,14 @@
   .dopamine p{
     font-size: 3rem;
     text-align: center;
+    font-family: 'Cal Sans', sans-serif;
+    letter-spacing: 2px;
   }
   .dopamine span{
     font-size: 3rem;
     color: red;
+    font-family: 'Cal Sans', sans-serif;
+    letter-spacing: 1px;
   }
   /* Responsive styles */
 

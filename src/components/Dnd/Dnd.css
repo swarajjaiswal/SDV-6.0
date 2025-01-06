@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Cal Sans';
+      src: url('../ASSETS/CalSans-SemiBold.woff2') format('woff2'),
+           url('../ASSETS/CalSans-SemiBold.woff') format('woff')
+           url("../ASSETS/CalSans-SemiBold.ttf") format('ttf');      
+      font-weight: 400; /* Normal weight */
+      font-style: normal; /* Regular style */
+}
 .dnd-container {
     position: relative;
     min-height: 100vh;
@@ -33,11 +41,10 @@
 }
 
 .dnd-heading h1 {
-    font-size: 7.0rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 68px;
-    font-family: 'Poppins', sans-serif;
+    font: 400 7em/1 "Anton", serif;
     background: linear-gradient(90deg, #ff0000, #ff7300);
     background-size: 300%;
     -webkit-background-clip: text;
@@ -47,21 +54,21 @@
 }
 
 .dnd-heading h2 {
-    font-size: 7.6rem;
+    font: 400 6.6em/1 "Anton", serif;
     font-weight: bold;
     background: linear-gradient(90deg, #ff0000, #ff7300);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient-shift 5s infinite;
-    margin-top: -40px;
 }
 
 .dnd-coming h2 {
-    font-size: 7rem;
-    font-weight: 700;
-    margin-top: -24px;
-    font-family: 'Expletus Sans';
+    font-size: 6rem;
+    font-weight: 500;
+    margin-top: 16px;
+    text-align: center;
+    font-family: 'Cal Sans', sans-serif;
     background: linear-gradient(90deg, #FFD700, white);
     background-size: 300%;
     -webkit-background-clip: text;
@@ -105,7 +112,6 @@
     }
     .dnd-coming h2 {
         font-size: 6rem;
-        margin-top: 20px;
     }
     .dnd-coming {
         position: relative;
@@ -149,7 +155,7 @@
     }
     .dnd-heading h2 {
         font-size: 4.4rem;
-        margin-top: -30px;
+      
     }
     .dnd-coming h2 {
         font-size: 4rem;
@@ -166,7 +172,7 @@
     }
     .dnd-heading h2 {
         font-size: 4.2rem;
-        margin-top: -30px;
+   
     }
     .dnd-coming h2 {
         font-size: 4rem;

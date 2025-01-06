@@ -52,23 +52,23 @@ const Homepage = () => {
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
-              <p className="sdv-heading  font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
+              <p className="sdv-heading  font-antons  leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
                 Self Driving Vehicles 6.0
               </p>
-              <p className="text-2xl text-[#FAFAFA] mt-4">
+              <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider">
                 Discover the future of autonomous transportation with advanced
                 technology and innovation.
               </p>
               <div className="mt-6">
                 <p className="flex items-center">
                   <MapPin className="mr-2 text-[#C10000]" /> {/* Icon color */}
-                  <span className="text-white text-2xl" > {/* Text color */}
+                  <span className=" font-calsans text-white text-2xl tracking-wider"> {/* Text color */}
                     National Institute of Technology Durgapur
                   </span>
                 </p>
                 <p className="flex items-center mt-2">
                   <CalendarDays className="mr-2 text-[#C10000]" /> {/* Icon color */}
-                  <span className="text-white text-2xl"> {/* Text color */}
+                  <span className="font-calsans text-white text-2xl tracking-wider"> {/* Text color */}
                     18th-19th January, 2025
                   </span>
                 </p>

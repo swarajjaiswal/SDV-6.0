@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Cal Sans';
+    src: url('../ASSETS/CalSans-SemiBold.woff2') format('woff2'),
+         url('../ASSETS/CalSans-SemiBold.woff') format('woff')
+         url("../ASSETS/CalSans-SemiBold.ttf") format('ttf');      
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
 .why-container {
     position: relative;
     min-height: 100vh;
@@ -6,9 +14,7 @@
   }
   
   .why-heading h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 3.8rem;
+    font: 400 4.6em/1 "Anton", serif;
     letter-spacing: 2px;
     margin-top: 24px;
     color: rgb(241, 13, 13);
@@ -60,18 +66,20 @@
   
   .media-right h3 {
     font-size: 1.4rem;
+    letter-spacing: 1px;
     margin-bottom: 20px;
     color: rgb(238, 81, 81);
     margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cal Sans', sans-serif;
     margin-left: 10px;
   }
   
   .media-right p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-right: 14px;
+    letter-spacing: 2px;
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cal Sans', sans-serif;
     line-height: 1.6;
   }
   

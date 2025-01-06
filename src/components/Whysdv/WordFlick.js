@@ -27,7 +27,8 @@ const WordFlick = () => {
   const wordStyle = {
     margin: "auto",
     color: "white",
-    font: "700 normal 2.2em 'Tahoma'",
+    fontFamily: "'Cal Sans', sans-serif",
+    fontSize: "2.4rem",
     textShadow: "5px 2px #222324, 2px 4px #222324, 3px 5px #222324",
   };
 

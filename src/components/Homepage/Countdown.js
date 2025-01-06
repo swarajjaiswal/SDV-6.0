@@ -34,7 +34,7 @@ const Countdown = () => {
 
     return (
         <div className="h-auto flex flex-col items-center p-16 mb-6">
-            <h2 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 text-center">
+            <h2 className="font-antons text-3xl md:text-6xl  text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 text-center">
                 Workshop goes live in
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-[#C10000] mt-8">

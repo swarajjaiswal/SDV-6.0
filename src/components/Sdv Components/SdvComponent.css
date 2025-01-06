@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: 'Cal Sans';
+    src: url('../ASSETS/CalSans-SemiBold.woff2') format('woff2'),
+         url('../ASSETS/CalSans-SemiBold.woff') format('woff')
+         url("../ASSETS/CalSans-SemiBold.ttf") format('ttf');      
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
 
 .gallery-heading {
   text-transform: uppercase;
@@ -8,12 +15,12 @@
   padding: 1.5em 0em;
   width: 90%;
   margin: 0 auto;
-  font: 400 0.9em/1.5 "Neuton";
+  font: 400 0.9em/1.5 "Anton", serif;
 }
 
 .gallery-heading span {
-  font: 700 4em/1 "Oswald", sans-serif;
-  letter-spacing: 0;
+  font: 400 4em/1 "Anton", serif;
+  letter-spacing: 2px;
   padding: .25em 0 .325em;
   display: block;
   margin: 0 auto;
@@ -91,12 +98,12 @@
   opacity: 0;
   transform: translateY(30px);
 
-  font: 400 1em/1.5 "Neuton";
+  font: 400 1em/1.5 "Anton", serif;;
   transition: opacity 0.5s, transform 0.5s;
 }
 
 .card:hover .info {
-  font-family: 'Lucida Sans';
+  font-family: "Anton", serif;;
   padding-left: 10px;
   padding-right: 10px;
   opacity: 1;
@@ -105,6 +112,7 @@
 
 .card .info h1 {
   text-align: left;
+  font: 400 4em/1 "Anton", serif;
   font-size: 1.7em;
   margin: 0;
 }
@@ -114,6 +122,7 @@
   letter-spacing: 1px;
   font-size: 0.9em;
   margin-top: 8px;
+  font-family: 'Cal Sans', sans-serif;
   margin-bottom: 20px;
 }
 

@@ -29,20 +29,20 @@ const WhySdv = () => {
 
       {/* Text Section */}
       <div className="text-section px-4 md:px-32">
-        <h2 className='text text-transparent bg-clip-text bg-gradient-to-r from-[#D52484] to-[#63e] font-bold text-3xl md:text-6xl'>
+        <h2 className='font-antons text text-transparent bg-clip-text bg-gradient-to-r from-[#D52484] to-[#63e]  text-3xl md:text-6xl'>
           Why SDV ?
         </h2>
         <ul className='space-y-4 md:space-y-12 mt-4'>
-          <motion.li whileHover={{ x: 10 }} className='text-lg md:text-xl gap-4'>
+          <motion.li whileHover={{ x: 10 }} className='font-calsans text-lg md:text-xl gap-4 tracking-wider'>
             High-quality service and support
           </motion.li>
-          <motion.li whileHover={{ x: 10 }} className='text-lg md:text-xl gap-4'>
+          <motion.li whileHover={{ x: 10 }} className='font-calsans text-lg md:text-xl gap-4 tracking-wider'>
             Innovative solutions tailored to your needs
           </motion.li>
-          <motion.li whileHover={{ x: 10 }} className='text-lg md:text-xl gap-4'>
+          <motion.li whileHover={{ x: 10 }} className='font-calsans text-lg md:text-xl gap-4 tracking-wider'>
             Commitment to sustainability
           </motion.li>
-          <motion.li whileHover={{ x: 10 }} className='text-lg md:text-xl gap-4'>
+          <motion.li whileHover={{ x: 10 }} className='font-calsans text-lg md:text-xl gap-4 tracking-wider'>
             Dedicated and experienced team
           </motion.li>
         </ul>

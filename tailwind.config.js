@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        stardos: ["'Stardos Stencil'", "sans-serif"],
+        antons:["Anton", "serif"],
+        calsans: ['Cal Sans', 'sans-serif'],
       },
 
       animation: {
