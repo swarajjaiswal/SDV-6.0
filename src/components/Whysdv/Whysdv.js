@@ -36,14 +36,14 @@ const Whysdv = () => {
           </div>
           {/* Image 1 */}
           <div className="media-item photo1">
-            <img src="/sdvbot.jpg" alt="Photo 1" />
+            <img src="/sdvcrowd1.jpg" alt="Photo 1" />
           </div>
         </div>
         {/* Second Row */}
         <div className="media-row">
           {/* Image 2 */}
           <div className="media-item photo2">
-            <img src="/sdvcrowd.jpg" alt="Photo 2" />
+            <img src="/sdvbotcheck.jpg" alt="Photo 2" />
           </div>
           {/* Video 2 */}
           <div className="media-item video2">
