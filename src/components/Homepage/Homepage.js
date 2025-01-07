@@ -41,12 +41,17 @@ const Homepage = () => {
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
               <p className="sdv-heading font-antons text-2xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
-                Self Driving Vehicles 6.0
+                Self Driving Vehicle Workshop 6.0
               </p>
+              <div className="text-2xl font-calsans flex text-white justify-center items-center mt-4">
+                <span className="italic">Powered by</span> 
+                <p className="text-center text-red-500"><a href="/sponsors" target="_blank" rel="noreferrer">&nbsp;The Dopamine Store</a></p>
+              </div>
+             
 
               <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider">
-                A world of exploration, excitement, and learning like you’ve
-                never experienced before. The adventure starts now!
+                Get ready for an exciting journey filled with fun, creativity,
+                and new connections ,SDV 6.0 is where big ideas come to life!
               </p>
 
               <div className="mt-6">
@@ -55,7 +60,7 @@ const Homepage = () => {
                   <span className=" font-calsans text-white text-2xl tracking-wider">
                     {" "}
                     {/* Text color */}
-                    National Institute of Technology Durgapur
+                    SAC Auditorium, NIT Durgapur
                   </span>
                 </p>
                 <p className="flex items-center mt-2">
@@ -78,7 +83,7 @@ const Homepage = () => {
               />
             </div>
           </div>
-          {/* <Banner /> */}
+          <Banner />
           <Countdown />
           <SdvWorkshop />
           <WhySdv />

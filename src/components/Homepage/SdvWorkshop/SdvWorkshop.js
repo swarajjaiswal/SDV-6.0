@@ -1,5 +1,5 @@
 import React from "react";
-
+import SpaceButton from '../SpaceButton/SpaceButton';
 const SdvWorkshop = () => {
   return (
     <div className="relative flex flex-col items-center mb-8 bg-gradient-to-b p-4 sm:p-6 md:p-8 lg:p-10">
@@ -21,33 +21,22 @@ const SdvWorkshop = () => {
         <div className="sm:w-1/2 text-center sm:text-left sm:pr-4 md:pr-6">
           <p className="text-sm sm:text-base md:text-sm lg:text-2xl text-[#F5F5F5] tracking-wide leading-relaxed">
             <br />
-            The 6th edition of <span className="text-red-500">Self Driving Vehicles</span>  celebrates a remarkable journey of
-            innovation, with each edition setting new milestones. Join us at SDV
-            6.0 and be part of the next unforgettable chapter! Experience
-            adrenaline-packed challenges and game-changing workshops. SDV 6.0 is
-            where learning meets adventure, exploration sparks excitement, and
-            every moment inspires. Don’t miss out on the event everyone’s
-            talking about!
+            The 6th edition of <span className="text-red-500">SDV Workshop</span> is back with exciting projects such as manually operated bots, line-following bots, obstacle-avoiding bots, and controlling bot movement. Whether you’re a beginner or have some experience, you’ll gain valuable technical skills in robotics and IoT while learning to collaborate effectively with your team. This is more than just a hands-on experience; it’s about growth, communication, and teamwork. Along the way, you’ll develop problem-solving skills, make new friends, and create lasting memories. Don’t miss this opportunity to dive into a world of innovation, creativity, and fun!
+
           </p>
 
-          <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-4">
-            <a
-              href="#register"
-              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
-                   text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
-                   hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              Register Now
-            </a>
+          <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-8">
+            <section className="button-section">
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdi0pQU4D_4i2UBk1brPG9NL-K5TmA3I276aq8Q5NQUlnm9fw/viewform?usp=sf_link' target="_blank" without rel="noreferrer">
+                <SpaceButton text="Register Now" />
+              </a>
+            </section>
 
-            <a
-              href="#learn-more"
-              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
-                   text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
-                   hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              Learn More
-            </a>
+            <section className="button-section">
+              <a href='/whysdv' target="_blank" without rel="noreferrer">
+                <SpaceButton text="Learn More" />
+              </a>
+            </section>
           </div>
         </div>
       </div>
