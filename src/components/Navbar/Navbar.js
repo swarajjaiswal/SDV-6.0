@@ -50,7 +50,7 @@ export const Navbar = () => {
       </div>
 
       <div className="right-section">
-        <button
+      <button
           className={`toggle-icon md:hidden ${isMenuOpen ? "open" : ""}`}
           onClick={handleWheelClick}
           aria-label="Toggle navigation menu"
@@ -71,28 +71,23 @@ export const Navbar = () => {
               />
             </svg>
           ) : (
-            <div
-              className="wheel-icon"
-              style={{
-                position: "relative",
-                width: "40px",
-                height: "40px",
-              }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <img
-                src="https://github.com/Jayasree7917/car/blob/main/1733946690984.png?raw=true"
-                alt="Wheel"
-                style={{
-                  position: "absolute",
-                  top: "0",
-                  right: "0",
-                  filter:
-                  "brightness(0) saturate(100%) invert(37%) sepia(94%) saturate(3393%) hue-rotate(357deg) brightness(92%) contrast(103%)",
-                }}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
               />
-            </div>
+            </svg>
           )}
         </button>
+
         <div
           className={`nav-items ${isMenuOpen ? "open" : ""}`}
           onClick={closeMenu}
