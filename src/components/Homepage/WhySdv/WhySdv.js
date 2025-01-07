@@ -70,7 +70,7 @@ const WhySdv = () => {
 
       {/* Right: Text Section */}
       <div className="text-section">
-        <h2 className="heading responsive-heading">Why SDV?</h2>
+        <h2 className="heading responsive-heading">Benefits and Perks: </h2>
        
 
        
