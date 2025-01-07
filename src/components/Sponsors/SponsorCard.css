@@ -1,0 +1,28 @@
+.sponsorscard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+
+    img{
+        width: 25vw;
+    }
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+    margin-top: 20px;
+    font-size: 2rem;
+    a:hover{
+        color: red;
+        transition: 0.3s ease-in;
+    }
+}
+@media screen and (max-width:426px) {
+    .socialmedia{
+        justify-content: space-evenly;
+    }
+    
+}

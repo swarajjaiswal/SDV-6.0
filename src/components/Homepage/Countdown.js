@@ -33,7 +33,7 @@ const Countdown = () => {
     const calculateProgress = (value, max) => (value / max) * 100;
 
     return (
-        <div className="h-auto flex flex-col items-center p-16 mb-6">
+        <div className="h-auto flex flex-col items-center p-16">
             <h2 className="font-antons text-3xl md:text-6xl  text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 text-center">
                 Workshop goes live in
             </h2>

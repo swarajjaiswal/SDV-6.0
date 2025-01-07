@@ -1,94 +1,128 @@
+/* General Styling */
 .why-sdv-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
     padding: 20px;
-}
-
-.gallery {
-    flex: 1 1 50%; /* Left half for images */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Add gap between images */
-}
-
-.sdv-gallery-item {
-    flex: 1 1 45%; /* Each image takes 45% of the width */
-    margin-bottom: 10px;
+    color: #fafafa;
+  }
+  
+  /* Image Gallery */
+  .sdv-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    gap: 20px;
+  }
+  
+  .sdv-gallery-item {
     border-radius: 8px;
     overflow: hidden;
-}
-
-.sdv-gallery-item img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .sdv-gallery-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .sdv-gallery-item img {
     width: 100%;
     height: auto;
-}
-
-.text-section {
-    flex: 1 1 50%; /* Right half for text, matching image width */
+  }
+  
+  /* Text Section */
+  .text-section {
+    flex: 1;
+    max-width: 600px;
     display: flex;
-    flex-direction: column; /* Make the text section vertical stack */
-   /* Center the content vertically */
-}
-
-.text-section h2 {
-    margin-bottom: 20px;
-    background: rgb(193, 0, 0); /* Added gradient to heading */
-    -webkit-background-clip: text; 
-    color: transparent; /* Make the text transparent so the gradient shows */
-   /* Increase the size of the heading for more impact */
-}
-
-.text-section ul {
-    list-style-type: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .heading {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #d52484, #63e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .feature-list {
+    list-style: none;
     padding: 0;
-}
-
-.text-section li {
-    margin-bottom: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .feature-item {
+    font-size: 1rem;
+    line-height: 1.4;
     display: flex;
     align-items: center;
-    
-    -webkit-background-clip: text;
-    color: #FAFAFA; /* Make the text transparent so the gradient shows */
-}
-
-.text-section li .arrow {
-    margin-right: 8px;
-    color: #FAFAFA; /* Arrow points text is now white */
-    font-size: 1.5em; /* Increase arrow size */
-}
-
-.text-section li span {
-    color: #FAFAFA; /* The text after the arrow points will be white */
-}
-
-.text-section li::before {
-    content: '→'; 
-    margin-right: 8px;
-    color: rgb(193, 0, 0); /* Arrow points are now white */
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateX(10px); /* Subtle hover animation */
+  }
+  
+  .feature-item span {
+    font-weight: 600;
+    color: #d52484;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
     .why-sdv-container {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-
-    .gallery {
-        flex: 1 1 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .sdv-gallery-item {
-        flex: 1 1 45%; /* Two images per row */
-    }
-
+  
     .text-section {
-        flex: 1 1 100%;
-        margin-top: 20px; /* Add some space between images and text */
+      max-width: 100%;
     }
-}
+  }
+
+  @media (max-width: 425px) {
+    .sdv-gallery {
+      grid-template-columns: repeat(2, 1fr); /* Maintain 2x2 grid on mobile */
+    }
+  }
+
+  /* Responsive Text Styles */
+  .responsive-heading {
+    font-size: 60px;
+  }
+  
+  .responsive-description {
+    font-size: 1rem;
+  }
+  
+  .responsive-feature-item {
+    font-size: 0.9rem;
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-heading {
+      font-size: 2.5rem;
+    }
+  
+    .responsive-description {
+      font-size: 1.2rem;
+    }
+  
+    .responsive-feature-item {
+      font-size: 1rem;
+    }
+  }
