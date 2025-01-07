@@ -56,8 +56,7 @@ const Homepage = () => {
                 Self Driving Vehicles 6.0
               </p>
               <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider">
-                Discover the future of autonomous transportation with advanced
-                technology and innovation.
+                A world of exploration, excitement, and learning like you’ve never experienced before. The adventure starts now!
               </p>
               <div className="mt-6">
                 <p className="flex items-center">
