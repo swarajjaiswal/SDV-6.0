@@ -34,20 +34,40 @@ const WhySdv = () => {
           Bring your ideas to life by building a self-driving bot with key
           features like line-following, obstacle avoidance, and more.
         </p>
-        
-        <ul className="feature-list mt-4 space-y-6">
-          <motion.li whileHover={{ x: 10 }} className="feature-item responsive-feature-item">
-            <span>Expert Mentorship</span>&nbsp; – Learn the art of building smart systems with expert guidance.
-          </motion.li>
-          <motion.li whileHover={{ x: 10 }} className="feature-item responsive-feature-item">
-            <span>Teamwork & Innovation</span>&nbsp; – Collaborate with like-minded peers to solve problems.
-          </motion.li>
-          <motion.li whileHover={{ x: 10 }} className="feature-item responsive-feature-item">
-            <span>Crafting Quality</span>&nbsp; – Build high-quality, future-shaping projects.
-          </motion.li>
-          <motion.li whileHover={{ x: 10 }} className="feature-item responsive-feature-item">
-            <span>Boost Your CV</span>&nbsp; – Showcase your skills with impactful projects and certifications.
-          </motion.li>
+
+        <ul className="space-y-4 text-lg leading-relaxed">
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Build your own self-driving bot and take it home.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Learn robotics concepts like line-following, obstacle avoidance,
+              cruise control, and more.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Gain real-world hands-on robotics and IoT experience.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Strengthen your CV with a standout project.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Earn a certificate of achievement to showcase your skills.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Connect with like-minded peers, make new friends, and learn from
+              shared experiences.
+            </span>
+          </li>
         </ul>
       </div>
     </div>

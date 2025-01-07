@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 
 const WordFlick = () => {
   const words = [
-    "Creating Smart Driving Bots",
-    "Bots for SDVs",
-    "The Future of Driving",
-    "Get Ready ! !",
+    "Explore world of Robotics",
+    "Hands on learning",
+    "Collaborate and grow together",
+    "Build , learn and have fun.",
   ];
 
   const [part, setPart] = useState("");

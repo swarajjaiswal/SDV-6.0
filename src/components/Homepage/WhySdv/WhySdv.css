@@ -44,7 +44,7 @@
   .heading {
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(90deg, #d52484, #63e);
+    background: linear-gradient(90deg, red, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -102,7 +102,7 @@
 
   /* Responsive Text Styles */
   .responsive-heading {
-    font-size: 60px;
+    font-size: 2rem; /* Adjusted for smaller screens */
   }
   
   .responsive-description {
