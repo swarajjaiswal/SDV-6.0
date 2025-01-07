@@ -71,37 +71,9 @@ const WhySdv = () => {
       {/* Right: Text Section */}
       <div className="text-section">
         <h2 className="heading responsive-heading">Why SDV?</h2>
-        <p className="description responsive-description">
-          Bring your ideas to life by building a self-driving bot with key
-          features like line-following, obstacle avoidance, and more.
-        </p>
+       
 
-        <ul className="feature-list mt-4 space-y-6">
-          <motion.li
-            whileHover={{ x: 10 }}
-            className="feature-item responsive-feature-item"
-          >
-            <span>Expert Mentorship</span>&nbsp; – Learn the art of building smart systems with expert guidance.
-          </motion.li>
-          <motion.li
-            whileHover={{ x: 10 }}
-            className="feature-item responsive-feature-item"
-          >
-            <span>Teamwork & Innovation</span>&nbsp; – Collaborate with like-minded peers to solve problems.
-          </motion.li>
-          <motion.li
-            whileHover={{ x: 10 }}
-            className="feature-item responsive-feature-item"
-          >
-            <span>Crafting Quality</span>&nbsp; – Build high-quality, future-shaping projects.
-          </motion.li>
-          <motion.li
-            whileHover={{ x: 10 }}
-            className="feature-item responsive-feature-item"
-          >
-            <span>Boost Your CV</span>&nbsp; – Showcase your skills with impactful projects and certifications.
-          </motion.li>
-        </ul>
+       
 
         {/* Second list with checkmarks */}
         <ul className="space-y-4 text-lg leading-relaxed">
