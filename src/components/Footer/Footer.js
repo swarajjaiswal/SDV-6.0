@@ -29,11 +29,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo Section */}
           <div>
-            <img
-              src="https://swarajjaiswal.github.io/saeevents/logo.png"
+          <a href="https://saenitd.in/">  <img
+              src="https://i.ibb.co/fvZpdy8/SAE-Logo-White-3x.png"
               alt="SAE Logo"
               className="w-32 mb-4"
-            />
+            /></a>
             <p className="text-gray-400 leading-relaxed">
               Driving innovation and excellence in automotive engineering
               education and research.
@@ -60,7 +60,10 @@ const Footer = () => {
               <NavLink to="/gallery" className="hover:text-[rgb(166,4,4)]">
                 Gallery
               </NavLink>
-              <NavLink to="/" className="hover:text-[rgb(166,4,4)]">
+              <NavLink to="/sponsors" className="hover:text-[rgb(166,4,4)]">
+                Sponsors
+              </NavLink>
+              <NavLink to="https://docs.google.com/forms/d/1OBjOjsYahT44kt_2BJob65cK5LY6eLn7s7KD-GTnXxY/edit" className="hover:text-[rgb(166,4,4)]">
                 Register
               </NavLink>
             </nav>

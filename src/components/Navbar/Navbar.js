@@ -42,11 +42,11 @@ export const Navbar = () => {
     <div className="nav-container">
       <div className="left-section">
         <div className="car-logo-container">
-          <img
-            src="https://swarajjaiswal.github.io/saeevents/logo.png"
+         <a href="https://saenitd.in/"> <img
+            src="https://i.ibb.co/fvZpdy8/SAE-Logo-White-3x.png"
             alt="Logo"
             className="logo transformed-logo"
-          />
+          /></a>
         </div>
       </div>
 
@@ -122,7 +122,7 @@ About
             }
             onClick={closeMenu}
           >
-            SDV Components
+            SDV Kit
           </NavLink>
 
           <NavLink
@@ -158,12 +158,14 @@ About
           </NavLink>
 }
           {showRegisterButton && (
-  <NavLink
-    type="button"
-    className={`relative font-bold text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-500 dark:focus:ring-red-500 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#387478,0_0_30px_#387478] glow-btn ${isMenuOpen ? "visible open" : "close"}`}
-  >
-    REGISTER
-  </NavLink>
+<NavLink
+  to="https://docs.google.com/forms/d/1OBjOjsYahT44kt_2BJob65cK5LY6eLn7s7KD-GTnXxY/edit"
+  type="button"
+  className={`relative font-bold text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-500 dark:focus:ring-red-500 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_#387478,0_0_30px_#387478] glow-btn ${isMenuOpen ? "visible open" : "close"}`}
+  onClick={closeMenu}
+>
+  REGISTER
+</NavLink>
 )}
 
         </div>

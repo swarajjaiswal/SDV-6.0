@@ -27,7 +27,7 @@ const SdvWorkshop = () => {
 
           <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-8">
             <section className="button-section">
-              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdi0pQU4D_4i2UBk1brPG9NL-K5TmA3I276aq8Q5NQUlnm9fw/viewform?usp=sf_link' target="_blank" without rel="noreferrer">
+              <a href='https://docs.google.com/forms/d/1OBjOjsYahT44kt_2BJob65cK5LY6eLn7s7KD-GTnXxY/edit' target="_blank" without rel="noreferrer">
                 <SpaceButton text="Register Now" />
               </a>
             </section>
