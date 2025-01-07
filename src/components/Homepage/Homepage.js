@@ -49,13 +49,14 @@ const Homepage = () => {
           <div className="dopamine">
                 <p>Presented by <span>The Dopamine Store</span></p>
               </div>
-              <br/>
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
-              <p className="sdv-heading  font-antons  leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
-                Self Driving Vehicles 6.0
-              </p>
+              <p className="sdv-heading font-antons text-2xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
+  Self Driving Vehicles 6.0
+</p>
+
+
               <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider">
                 A world of exploration, excitement, and learning like you’ve never experienced before. The adventure starts now!
               </p>

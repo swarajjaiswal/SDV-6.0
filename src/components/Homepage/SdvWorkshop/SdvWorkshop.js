@@ -7,10 +7,9 @@ const SdvWorkshop = () => {
         <h1 className="text-2xl font-antons sm:text-3xl  md:text-4xl lg:text-6xl  text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg tracking-wider ">
           About SDV Workshop
         </h1>
-        <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider px-12 md:px-32">
+        <p className="font-calsans text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-[#FAFAFA] mt-4 tracking-wide px-8 md:px-20 text-justify">
   The 6th edition of SDV celebrates a remarkable journey of innovation, with each edition setting new milestones. Join us at SDV 6.0 and be part of the next unforgettable chapter! Experience adrenaline-packed challenges and game-changing workshops. SDV 6.0 is where learning meets adventure, exploration sparks excitement, and every moment inspires. Don’t miss out on the event everyone’s talking about!
 </p>
-
 
       </div>
 
@@ -39,15 +38,29 @@ const SdvWorkshop = () => {
           </p> */}
 
           <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-8 sm:space-x-8 md:space-x-10">
-            <a
-              href="#register"
-              className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
-                   text-[#FAFAFAFA] text-s sm:text-sm md:text-base lg:text-lg font-semibold rounded-full shadow-lg 
-                   hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              Register Now
-            </a>
-            
+           <a
+  href="#register"
+  className="relative inline-block px-8 py-4 text-lg font-bold text-white rounded-full 
+             bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 shadow-xl 
+             transform transition-all duration-500 hover:scale-110 hover:shadow-2xl 
+             group overflow-hidden"
+>
+  {/* Neon Glowing Pulse Effect */}
+  <span className="absolute inset-0 bg-gradient-to-r from-red-500 to-yellow-400 opacity-0 group-hover:opacity-80 
+                  transition-opacity duration-500 ease-in-out"></span>
+
+  {/* Glowing Edge Animation */}
+  <span className="absolute inset-0 border-4 border-transparent rounded-full group-hover:border-red-600 
+                  group-hover:border-4 group-hover:animate-pulse transition-all duration-700"></span>
+
+  {/* 3D Hover Effect */}
+  <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full 
+                  opacity-0 group-hover:opacity-50 transform scale-110 transition-all duration-500"></span>
+
+  {/* Button Text */}
+  <span className="relative z-10 group-hover:text-gray-100 transition-colors duration-300">Register Now</span>
+</a>
+
             <a
               href="/whysdv"
               className="px-4 py-2 sm:px-6 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-[#C10000] to-red-700 
