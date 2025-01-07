@@ -7,9 +7,11 @@ const SdvWorkshop = () => {
         <h1 className="text-2xl font-antons sm:text-3xl  md:text-4xl lg:text-6xl  text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg tracking-wider ">
           About SDV Workshop
         </h1>
-        <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider">
-               The 6th edition of SDV celebrates a remarkable journey of innovation, with each edition setting new milestones. Join us at SDV 6.0 and be part of the next unforgettable chapter! Experience adrenaline-packed challenges and game-changing workshops. SDV 6.0 is where learning meets adventure, exploration sparks excitement, and every moment inspires. Don’t miss out on the event everyone’s talking about!
-        </p>
+        <p className="font-calsans text-2xl text-[#FAFAFA] mt-4 tracking-wider px-12 md:px-32">
+  The 6th edition of SDV celebrates a remarkable journey of innovation, with each edition setting new milestones. Join us at SDV 6.0 and be part of the next unforgettable chapter! Experience adrenaline-packed challenges and game-changing workshops. SDV 6.0 is where learning meets adventure, exploration sparks excitement, and every moment inspires. Don’t miss out on the event everyone’s talking about!
+</p>
+
+
       </div>
 
       <div className="mt-8 sm:mt-12 md:mt-16 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6 md:space-x-8">
