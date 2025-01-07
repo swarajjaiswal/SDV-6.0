@@ -102,6 +102,42 @@ const WhySdv = () => {
             <span>Boost Your CV</span>&nbsp; – Showcase your skills with impactful projects and certifications.
           </motion.li>
         </ul>
+
+        {/* Second list with checkmarks */}
+        <ul className="space-y-4 text-lg leading-relaxed">
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Build your own self-driving bot and take it home.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Learn robotics concepts like line-following, obstacle avoidance,
+              cruise control, and more.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Gain real-world hands-on robotics and IoT experience.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>Strengthen your CV with a standout project.</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Earn a certificate of achievement to showcase your skills.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">&#10003;</span>
+            <span>
+              Connect with like-minded peers, make new friends, and learn from
+              shared experiences.
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );
