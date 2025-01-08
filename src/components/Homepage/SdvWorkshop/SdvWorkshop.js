@@ -27,13 +27,13 @@ const SdvWorkshop = () => {
 
           <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center sm:justify-center md:justify-start flex-wrap space-x-2 sm:space-x-8">
             <section className="button-section">
-              <a href='https://docs.google.com/forms/d/1OBjOjsYahT44kt_2BJob65cK5LY6eLn7s7KD-GTnXxY/edit' target="_blank" without rel="noreferrer">
+              <a href='https://docs.google.com/forms/d/1OBjOjsYahT44kt_2BJob65cK5LY6eLn7s7KD-GTnXxY/edit'  without rel="noreferrer">
                 <SpaceButton text="Register Now" />
               </a>
             </section>
 
             <section className="button-section">
-              <a href='/whysdv' target="_blank" without rel="noreferrer">
+              <a href='/whysdv' without rel="noreferrer">
                 <SpaceButton text="Learn More" />
               </a>
             </section>
