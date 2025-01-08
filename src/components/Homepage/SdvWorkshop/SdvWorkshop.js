@@ -2,7 +2,7 @@ import React from "react";
 import SpaceButton from '../SpaceButton/SpaceButton';
 const SdvWorkshop = () => {
   return (
-    <div className="relative flex flex-col items-center mb-8 bg-gradient-to-b p-4 sm:p-6 md:p-8 lg:p-10">
+    <div className="relative flex flex-col items-center  bg-gradient-to-b p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="text-center space-y-4 sm:space-y-6 md:space-y-8 animate-fade-in">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#C10000] to-[#C10000] drop-shadow-lg">
           About SDV Workshop
@@ -12,9 +12,9 @@ const SdvWorkshop = () => {
       <div className="mt-8 sm:mt-12 md:mt-16 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6 md:space-x-8">
         <div className="flex justify-center sm:w-1/2 sm:pl-4 md:pl-6">
           <img
-            src="https://i.ibb.co/XkV5C73/arduino-car-1.gif"
+            src="./sdvposter.jpg"
             alt="Self-Driving Vehicles Workshop"
-            className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 object-cover"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 object-conatin mt-6"
           />
         </div>
 

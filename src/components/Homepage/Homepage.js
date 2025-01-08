@@ -36,7 +36,7 @@ const Homepage = () => {
       </div>
 
       {showOtherContent && (
-        <div className="">
+        <div className="md:flex md:flex-col">
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-x-8 mx-12">
             {/* Text Section */}
             <div className="flex-1 text-center md:text-left">
@@ -67,14 +67,12 @@ const Homepage = () => {
                   {/* Icon color */}
                   <span className="font-calsans text-white text-2xl tracking-wider">
                     {" "}
-                    {/* Text color */}
                     18th-19th January, 2025
                   </span>
                 </p>
               </div>
             </div>
 
-            {/* Image Section */}
             <div className="flex-1">
               <img
                 src="https://i.ibb.co/r0bz453/1-removebg.png"
