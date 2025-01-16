@@ -5,7 +5,7 @@ const sponsors = [
     name: "The Dopamine Store",
     logo: "https://i.ibb.co/DDPwjXk/sponsorlogo.png",
     description: "We are excited to announce The Dopamine Store as the official title sponsor of SDV 6.0, hosted by Team SAEINDIA, NIT Durgapur. The Dopamine Store is known for its vibrant range of mood-boosting products that bring joy and energy to everyday life. From quirky gifts to unique lifestyle items, their collection is crafted to uplift spirits and create moments of happiness. They focus on enhancing well-being through thoughtful, creative, and functional products. This positive and innovative approach aligns perfectly with the spirit of SDV 6.0, and we’re thrilled to have them as our partner.",
-    instagram : "#",
+    instagram : "https://www.instagram.com/dop.aminestore?igsh=cTF1NDNsdG1vNHFq",
     linkedin : "#",
     facebook : "#",
   },
