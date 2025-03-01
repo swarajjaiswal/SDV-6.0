@@ -8,7 +8,7 @@ import Team from "./components/Team/Team";
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Sparkles from "./components/Sparkles/Sparkles";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollPage/ScrollToTop";
 import Dnd from './components/Dnd/Dnd';
 import Whysdv from './components/Whysdv/Whysdv';
 import Sponsors from "./components/Sponsors/Sponsors";

@@ -58,7 +58,7 @@ const Whysdv = () => {
         </p>
 
 <br />
-<h1 className="text-6xl upcoming-details">Exciting Details Coming Soon !!!</h1>
+{/* <h1 className="text-6xl upcoming-details">Exciting Details Coming Soon !!!</h1> */}
      
         <h3>
           An event where creativity meets technology, allowing students to
